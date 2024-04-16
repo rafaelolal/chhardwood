@@ -1,95 +1,66 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="card text-bg-dark">
+        <Image
+          src="/test.jpg"
+          width={500}
+          height={500}
+          className="card-img"
+          alt="..."
+        />
+        <div className="card-img-overlay">
+          <h1 className="card-title">CH Hardwood</h1>
+          <h5 className="card-text">Timeless Elegance</h5>
+          <h5 className="card-text">Meets Exceptional</h5>
+          <h5 className="card-text">CRAFTSMANSHIP</h5>
+          <p className="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <Link href="/message" className="btn btn-primary">
+            Primary
+          </Link>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <h2>Our Story</h2>
+
+      <p>
+        With a passion for natural beauty and a commitment to excellence, we
+        take pride in transforming spaces into stunning showcases with our
+        exquisite hardwood flooring solutions.
+      </p>
+
+      <div className="row">
+        <div className="col">
+          <Image
+            src="/test.jpg"
+            width={500}
+            height={500}
+            className="card-img"
+            alt="..."
+          />
+        </div>
+
+        <div className="col">
+          <Image
+            src="/test.jpg"
+            width={500}
+            height={500}
+            className="card-img"
+            alt="..."
+          />
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Link href="/gallery" className="btn btn-primary">
+        Gallery
+      </Link>
     </main>
   );
 }
