@@ -16,8 +16,8 @@ export default function ImageList({ images }: ImageListProps) {
         const firstImage = images[2 * i];
         const secondImage = images[2 * i + 1];
         return (
-          <div className="row" key={i}>
-            <div className="col">
+          <div className="row py-2 justify-content-evenly" key={i}>
+            <div className="col-auto p-0">
               {firstImage && (
                 <Image
                   src={firstImage.link}
@@ -28,7 +28,7 @@ export default function ImageList({ images }: ImageListProps) {
               )}
             </div>
 
-            <div className="col">
+            <div className="col-auto p-0">
               {secondImage && (
                 <Image
                   src={secondImage.link}
