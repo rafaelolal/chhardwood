@@ -65,9 +65,9 @@ export default function Services() {
     <main>
       <div className="row py-4">
         <h1 className="fs-4 text-center text-primary m-0 p-0">Services</h1>
-        <h6 className="body-text fs-6 text-center m-0 mb-2">
+        <h2 className="body-text fs-6 text-center m-0 mb-2">
           A list of our services
-        </h6>
+        </h2>
         <div className="bar" />
       </div>
 
