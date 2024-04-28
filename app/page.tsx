@@ -1,90 +1,148 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { ImageOptimizerCache } from "next/dist/server/image-optimizer";
 
 export default function Home() {
   return (
     <main>
+      <div className="header-bg pt-5 border-top border-light border-3">
+        <div className="container py-5 text-center">
+          <div className="position-relative logo mx-auto d-block">
+            <Image
+              src="/images/logo.png"
+              fill
+              objectFit="contain"
+              alt="CH Hardwood Floors Logo"
+            />
+          </div>
 
-        <div className="header-bg pt-5 border-top border-light border-3" >
-          <div className="container py-5 text-center">
-            <img src="/images/logo.png" className="logo"></img>
-            <h6 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h6>
-            <h6 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h6>
-            <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
-            <Link href="/message" className="btn btn-tertiary">
-              Our Services
-            </Link>
+          <h6 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h6>
+          <h6 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h6>
+          <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
+          <Link href="/message" className="btn btn-tertiary">
+            Our Services
+          </Link>
 
-            <div className="row justify-content-between mt-4">
-              <div className="col-12 col-sm-6">
-                <a className="mx-2" href="https://www.instagram.com/ch_hardwoodfloors/"><img src="/icons/instagram.png" width={35} height={35} alt="Instagram"></img></a>
-                <a className="mx-2" href="https://www.facebook.com/chhardwoodfloors"><img src="/icons/facebook.png" width={35} height={35} alt="Facebook"></img></a>
-                <a className="mx-2" href=""><img src="/icons/phone-call.png" width={35} height={35} alt="Phone Number"></img></a>
-              </div>
+          <div className="row justify-content-between mt-4">
+            <div className="col-12 col-sm-6">
+              <a
+                className="mx-2"
+                href="https://www.instagram.com/ch_hardwoodfloors/"
+              >
+                <Image
+                  src="/icons/instagram.png"
+                  width={35}
+                  height={35}
+                  alt="Instagram"
+                />
+              </a>
+              <a
+                className="mx-2"
+                href="https://www.facebook.com/chhardwoodfloors"
+              >
+                <Image
+                  src="/icons/facebook.png"
+                  width={35}
+                  height={35}
+                  alt="Facebook"
+                />
+              </a>
+              <a className="mx-2" href="">
+                <Image
+                  src="/icons/phone-call.png"
+                  width={35}
+                  height={35}
+                  alt="Phone Number"
+                />
+              </a>
+            </div>
 
-              <div className="col-12 col-sm-6 d-none d-sm-block">
-                <Link href="/message" className="btn btn-tertiary">
-                  Contact Us
-                </Link>
-              </div>
-            </div>   
+            <div className="col-12 col-sm-6 d-none d-sm-block">
+              <Link href="/message" className="btn btn-tertiary">
+                Contact Us
+              </Link>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div className="row bg-white p-5">
+        <div className="col d-none d-sm-flex">
+          <Image
+            className="ms-auto me-4"
+            src="/images/test.jpg"
+            height={400}
+            width={400}
+            alt="Paint bucket"
+          />
         </div>
+        <div className="col d-flex flex-column">
+          <h6 className="text-primary text-center text-sm-left fs-4">
+            Our Story <a className="text-secondary fs-1">|</a>
+          </h6>
 
-        
-    <div className="row bg-white p-5">
-      <div className="col d-none d-sm-flex">
-        <Image
-        className="ms-auto me-4"
-        src="/images/test.jpg"
-        height={400}
-        width={400}
-        alt="Paint bucket"
-        />
+          <h6 className="mb-5 text-center text-sm-left body-text">
+            With a passion for natural beauty and a commitment to excellence, we
+            take pride in transforming spaces into stunning showcases with our
+            exquisite hardwood flooring solutions.
+          </h6>
 
-      </div>
-      <div className="col d-flex flex-column">
-      <h6 className="text-primary text-center text-sm-left fs-4">Our Story  <a className="text-secondary fs-1">|</a></h6> 
+          <div
+            className="position-relative"
+            style={{ width: "100%", height: "300px" }}
+          >
+            <Image
+              className="d-block d-sm-none"
+              src="/images/paint.jpg"
+              alt="Paint Bucket"
+              fill
+              objectFit="contain"
+            />
+          </div>
 
-      <h6 className="mb-5 text-center text-sm-left body-text">
-        With a passion for natural beauty and a commitment to excellence, we
-        take pride in transforming spaces into stunning showcases with our
-        exquisite hardwood flooring solutions.
-      </h6>
-
-      <img className="d-block d-sm-none" src="/images/paint.jpg" alt="Paint Bucket" style={{width: "100%", maxWidth: "500", height: "auto"}}></img>
-
-      <div className="bullet-points pt-4">
-      <h6> <span></span> Lorem ipsum dolor sit amet consecte</h6>
-      <h6> <span></span> Lorem ipsum dolor</h6>
-      <h6> <span></span> Lorem ipsum dolor sit amet</h6>
-      <h6> <span></span> Lorem ipsum dolor sit amet consecte</h6>
-      <h6> <span></span> Lorem ipsum dolor</h6>
-      </div>
-      
-      </div>
+          <div className="bullet-points pt-4">
+            <h6>
+              {" "}
+              <span></span> Lorem ipsum dolor sit amet consecte
+            </h6>
+            <h6>
+              {" "}
+              <span></span> Lorem ipsum dolor
+            </h6>
+            <h6>
+              {" "}
+              <span></span> Lorem ipsum dolor sit amet
+            </h6>
+            <h6>
+              {" "}
+              <span></span> Lorem ipsum dolor sit amet consecte
+            </h6>
+            <h6>
+              {" "}
+              <span></span> Lorem ipsum dolor
+            </h6>
+          </div>
+        </div>
       </div>
 
       <div className="row wood-bg py-5 m-0 ">
-        <h6 className="text-light text-center m-1 m-sm-4 p-2 p-sm-3"> LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON
-        WHAT'S IMPORTANT</h6>
+        <h6 className="text-light text-center m-1 m-sm-4 p-2 p-sm-3">
+          LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
+        </h6>
         <Link href="/gallery" className="btn btn-secondary mx-auto my-3">
           View Our Work
         </Link>
-
-
       </div>
-
 
       <div className="row p-5 bg-light">
         <div className="col-12 py-5">
-          <h6 className="text-center text-primary fs-4"> 
-          Our Customer's Most Loved Services
-        </h6> 
+          <h6 className="text-center text-primary fs-4">
+            Our Most Loved Services
+          </h6>
         </div>
         <div className="col-12 col-sm-6 col-md-4 my-3">
-        <Image
+          <Image
             src="/images/test.jpg"
             width={400}
             height={400}
@@ -113,11 +171,10 @@ export default function Home() {
         </div>
         <div className="col-12 d-flex py-5">
           <Link href="/service" className="btn btn-secondary mx-auto">
-                View All Services
-              </Link>
-          </div>
+            View All Services
+          </Link>
+        </div>
       </div>
-      
     </main>
   );
 }
