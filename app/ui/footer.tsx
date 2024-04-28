@@ -5,6 +5,7 @@ export default function Footer() {
   return (
     <div className="container-fluid m-0 bg-primary pt-4 px-1">
       <div className="row">
+        
         <div className="col-12 col-md-3 py-3 text-center">
           <Image
             src="/images/logo.png"
