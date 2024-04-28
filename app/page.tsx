@@ -10,7 +10,7 @@ export default function Home() {
             <Image
               src="/images/logo.png"
               fill
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
               alt="CH Hardwood Floors Logo"
             />
           </div>
@@ -18,8 +18,8 @@ export default function Home() {
           <h6 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h6>
           <h6 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h6>
           <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
-          <Link href="/message" className="btn btn-tertiary">
-            Our Services
+          <Link href="/contact" className="btn btn-tertiary">
+            Contact us
           </Link>
 
           <div className="row justify-content-between mt-4">
@@ -95,7 +95,7 @@ export default function Home() {
               src="/images/paint.jpg"
               alt="Paint Bucket"
               fill
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
 
