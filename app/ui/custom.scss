@@ -86,12 +86,12 @@ main{
     color: $tertiary;
   }
 
-  .bullet-points h6{
+  .bullet-points p{
     font-family: "League Spartan", sans-serif;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .bullet-points h6 span{
+  .bullet-points p span{
     background-color: $primary;
     height: 13px;
     width: 13px;
@@ -124,6 +124,10 @@ main{
 
   .fs-8{
     font-size: 0.7rem;
+  }
+
+  .fs-9{
+    font-size: 0.6rem
   }
 
 .navbar-text li{

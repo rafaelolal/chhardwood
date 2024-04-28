@@ -30,12 +30,12 @@ export default function Navbar() {
           style={{ transition: "0.1s" }}
         >
           <div className="offcanvas-header m-0 bg-primary">
-            <h5
-              className="offcanvas-title text-light border-0"
+            <h1
+              className="offcanvas-title text-light border-0 navbar-brand"
               id="offcanvasNavbarLabel"
             >
               CH HardWood
-            </h5>
+            </h1>
 
             <button
               type="button"
@@ -98,7 +98,7 @@ export default function Navbar() {
 
                   <li>
                     <Link className="dropdown-item" href="/appointment">
-                      Schedule An Appointment
+                      Book An Appointment
                     </Link>
                   </li>
 

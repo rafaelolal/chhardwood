@@ -17,52 +17,47 @@ export default function Home() {
             />
           </div>
 
-          <h6 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h6>
-          <h6 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h6>
-          <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
-          <Link href="/message" className="btn btn-tertiary">
+          <h2 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h2>
+          <h2 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h2>
+          <h2 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h2>
+          <Link href="/message" className="btn btn-tertiary mx-2">
             Our Services
           </Link>
+          <Link href="/message" className="btn btn-tertiary mx-2">
+            Contact Us
+          </Link>
 
-          <div className="row justify-content-between mt-4">
-            <div className="col-12 col-sm-6">
-              <a
-                className="mx-2"
-                href="https://www.instagram.com/ch_hardwoodfloors/"
-              >
-                <Image
-                  src="/icons/instagram.png"
-                  width={35}
-                  height={35}
-                  alt="Instagram"
-                />
-              </a>
-              <a
-                className="mx-2"
-                href="https://www.facebook.com/chhardwoodfloors"
-              >
-                <Image
-                  src="/icons/facebook.png"
-                  width={35}
-                  height={35}
-                  alt="Facebook"
-                />
-              </a>
-              <a className="mx-2" href="">
-                <Image
-                  src="/icons/phone-call.png"
-                  width={35}
-                  height={35}
-                  alt="Phone Number"
-                />
-              </a>
-            </div>
-
-            <div className="col-12 col-sm-6 d-none d-sm-block">
-              <Link href="/message" className="btn btn-tertiary">
-                Contact Us
-              </Link>
-            </div>
+          <div className="py-4">
+            <a
+              className="mx-2"
+              href="https://www.instagram.com/ch_hardwoodfloors/"
+            >
+              <Image
+                src="/icons/instagram.png"
+                width={35}
+                height={35}
+                alt="Instagram"
+              />
+            </a>
+            <a
+              className="mx-2"
+              href="https://www.facebook.com/chhardwoodfloors"
+            >
+              <Image
+                src="/icons/facebook.png"
+                width={35}
+                height={35}
+                alt="Facebook"
+              />
+            </a>
+            <a className="mx-2" href="">
+              <Image
+                src="/icons/phone-call.png"
+                width={35}
+                height={35}
+                alt="Phone Number"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -78,22 +73,21 @@ export default function Home() {
           />
         </div>
         <div className="col d-flex flex-column">
-          <h6 className="text-primary text-center text-sm-left fs-4">
+          <h1 className="text-primary text-center text-sm-left fs-4">
             Our Story <a className="text-secondary fs-1">|</a>
-          </h6>
+          </h1>
 
-          <h6 className="mb-5 text-center text-sm-left body-text">
+          <p className="mb-5 text-center text-sm-left body-text p-0">
             With a passion for natural beauty and a commitment to excellence, we
             take pride in transforming spaces into stunning showcases with our
             exquisite hardwood flooring solutions.
-          </h6>
+          </p>
 
           <div
-            className="position-relative"
+            className="position-relative d-block d-sm-none"
             style={{ width: "100%", height: "300px" }}
           >
             <Image
-              className="d-block d-sm-none"
               src="/images/paint.jpg"
               alt="Paint Bucket"
               fill
@@ -101,35 +95,32 @@ export default function Home() {
             />
           </div>
 
-          <div className="bullet-points pt-4">
-            <h6>
+          <p className="pt-4 m-0 fs-6 text-primary">Our promise to you</p>
+          <div className="bullet-points">
+            <p>
               {" "}
-              <span></span> Lorem ipsum dolor sit amet consecte
-            </h6>
-            <h6>
+              <span></span> Satisfaction Guaranteed
+            </p>
+            <p>
               {" "}
-              <span></span> Lorem ipsum dolor
-            </h6>
-            <h6>
+              <span></span> Exceeding expectations
+            </p>
+            <p>
               {" "}
-              <span></span> Lorem ipsum dolor sit amet
-            </h6>
-            <h6>
-              {" "}
-              <span></span> Lorem ipsum dolor sit amet consecte
-            </h6>
-            <h6>
+              <span></span> Commitment to quality
+            </p>
+            <p>
               {" "}
               <span></span> Lorem ipsum dolor
-            </h6>
+            </p>
           </div>
         </div>
       </div>
 
       <div className="row wood-bg py-5 m-0 ">
-        <h6 className="text-light text-center m-1 m-sm-4 p-2 p-sm-3">
+        <h3 className="text-light text-center m-1 m-sm-4 p-2 p-sm-3">
           LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
-        </h6>
+        </h3>
         <Link href="/gallery" className="btn btn-secondary mx-auto my-3">
           View Our Work
         </Link>
@@ -137,9 +128,9 @@ export default function Home() {
 
       <div className="row p-5 bg-light">
         <div className="col-12 py-5">
-          <h6 className="text-center text-primary fs-4">
+          <h1 className="text-center text-primary fs-4">
             Our Most Loved Services
-          </h6>
+          </h1>
         </div>
         <div className="col-12 col-sm-6 col-md-4 my-3">
           <Image
