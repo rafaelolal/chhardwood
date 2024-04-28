@@ -151,7 +151,7 @@ export default function Navbar() {
                   src="/images/logo.png"
                   fill
                   alt="CH Hardwood Floors Logo"
-                  objectFit="contain"
+                  style={{ objectFit: "contain" }}
                 />
               </li>
             </ul>

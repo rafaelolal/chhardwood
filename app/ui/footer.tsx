@@ -11,7 +11,7 @@ export default function Footer() {
               src="/images/logo.png"
               fill
               alt="CH HardWood Logo"
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
 
