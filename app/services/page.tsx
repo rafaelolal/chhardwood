@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ImageList from "../ui/image-list";
 import Link from "next/link";
+import ServiceList from "../ui/service-list";
 
 type ImageType = {
   alt: string;
@@ -70,33 +71,7 @@ export default function Services() {
         <div className="bar" />
       </div>
 
-      <div className="row">
-        {services.map((service, index) => (
-          <div className="col" key={index}>
-            <div className="card" style={{ width: "18rem" }}>
-              <div
-                className="card-img-top position-relative"
-                style={{ height: "1", width: "100%" }}
-              >
-                <Image
-                  src={service.image.link}
-                  alt={service.image.alt}
-                  fill
-                  objectFit="contain"
-                />
-              </div>
-
-              <div className="card-body">
-                <h5 className="card-title">{service.name}</h5>
-                <p className="card-text">{service.description}</p>
-                <Link href={service.link} className="btn btn-primary">
-                  More
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <ServiceList services={services} />
     </main>
   );
 }
