@@ -1,7 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
-import { ImageOptimizerCache } from "next/dist/server/image-optimizer";
 
 export default function Home() {
   return (
@@ -124,47 +122,6 @@ export default function Home() {
         <Link href="/gallery" className="btn btn-secondary mx-auto my-3">
           View Our Work
         </Link>
-      </div>
-
-      <div className="row p-5 bg-light">
-        <div className="col-12 py-5">
-          <h1 className="text-center text-primary fs-4">
-            Our Most Loved Services
-          </h1>
-        </div>
-        <div className="col-12 col-sm-6 col-md-4 my-3">
-          <Image
-            src="/images/test.jpg"
-            width={400}
-            height={400}
-            className="card-img"
-            alt="..."
-          />
-        </div>
-
-        <div className="col-12 col-sm-6 col-md-4 my-3">
-          <Image
-            src="/images/test.jpg"
-            width={400}
-            height={400}
-            className="card-img"
-            alt="..."
-          />
-        </div>
-        <div className="col-12 col-6 col-md-4 my-3">
-          <Image
-            src="/images/test.jpg"
-            width={400}
-            height={400}
-            className="card-img"
-            alt="..."
-          />
-        </div>
-        <div className="col-12 d-flex py-5">
-          <Link href="/service" className="btn btn-secondary mx-auto">
-            View All Services
-          </Link>
-        </div>
       </div>
     </main>
   );
