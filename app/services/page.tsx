@@ -64,32 +64,35 @@ export default function Services() {
     <main>
       <div className="row py-4">
         <h1 className="fs-4 text-center text-primary m-0 p-0">Services</h1>
-        <h6 className="body-text fs-6 text-center m-0 mb-2">
+        <h2 className="body-text fs-6 text-center m-0 mb-2">
           A list of our services
-        </h6>
+        </h2>
         <div className="bar" />
       </div>
 
-      <div className="row">
+      <div className="row jutsify-content-evenly">
         {services.map((service, index) => (
-          <div className="col" key={index}>
-            <div className="card" style={{ width: "18rem" }}>
+          <div className="col text-center" key={index}>
+            <div
+              className="card m-3 mx-auto bg-light"
+              style={{ width: "18rem", maxHeight: "20rem" }}
+            >
               <div
                 className="card-img-top position-relative"
-                style={{ height: "1", width: "100%" }}
+                style={{ height: "16rem", width: "100%" }}
               >
                 <Image
                   src={service.image.link}
                   alt={service.image.alt}
                   fill
-                  objectFit="contain"
+                  objectFit="cover"
                 />
               </div>
 
               <div className="card-body">
-                <h5 className="card-title">{service.name}</h5>
-                <p className="card-text">{service.description}</p>
-                <Link href={service.link} className="btn btn-primary">
+                <h6 className="card-title">{service.name}</h6>
+                <p className="card-text fs-7">{service.description}</p>
+                <Link href={service.link} className="btn btn-tertiary">
                   More
                 </Link>
               </div>
