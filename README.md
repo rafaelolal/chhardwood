@@ -1,6 +1,15 @@
+# TODO
+
+- [ ] Replace Rafael's Google appointments
+- [ ] Replace receiving email
+- [ ] copy phone number to clipboard, display phone number?
+- [ ] change footer address
+- [ ] Add page translation
+
 # For DJ
 
 Execute
+
 1. `npm i`
 2. `npm run dev`
 
