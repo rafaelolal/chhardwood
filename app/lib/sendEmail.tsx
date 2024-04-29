@@ -19,8 +19,8 @@ export async function emailHandleSubmit(formData: FormData) {
 
   await transporter.sendMail({
     from: process.env.EMAIL_USERNAME,
-    to: email,
+    to: email as string, // Cast email to string
     subject: `New message from ${name}`,
-    text: message,
+    text: message as string,
   });
 }
