@@ -8,9 +8,9 @@ type PageType = {
 
 export default function Contact() {
   const pages: PageType[] = [
-    { name: "Make an Appointment", link: "/images/test1.jpg" },
-    { name: "Message Us", link: "/images/test2.jpg" },
-    { name: "Get a Quote", link: "/images/test3.jpg" },
+    { name: "Make an Appointment", link: "/chhardwood/images/test1.jpg" },
+    { name: "Message Us", link: "/chhardwood/images/test2.jpg" },
+    { name: "Get a Quote", link: "/chhardwood/images/test3.jpg" },
   ];
 
   return (
