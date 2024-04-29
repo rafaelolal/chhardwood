@@ -92,17 +92,17 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item " data-bs-dismiss="offcanvas">
+              {/* <li className="nav-item " data-bs-dismiss="offcanvas">
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
-                  href="/help"
+                  href="chhardwood/help"
                 >
                   HELP
                 </Link>
-              </li>
+              </li> */}
 
-              <li>
+              {/* <li>
                 <div className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle text-light"
@@ -126,7 +126,8 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </div>
-              </li>
+              </li> */}
+
             </ul>
             <div className="mx-auto">
               <Image

@@ -34,9 +34,9 @@ export default function Service({ service }: ServiceProps) {
         <div className="card-body text-center">
           <h5 className="card-title fs-6">{service.name}</h5>
           <p className="card-text fs-7">{service.description}</p>
-          <Link href={service.link} className="btn btn-tertiary fs-7">
+          {/* <Link href={service.link} className="btn btn-tertiary fs-7">
             More
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
