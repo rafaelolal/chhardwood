@@ -6,7 +6,7 @@ export default function Appointment() {
           Book an Appointment
         </h1>
         <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
-          Meet with us whenever you're available
+          Meet with us whenever you are available
         </h2>
         <div className="bar" />
       </div>
