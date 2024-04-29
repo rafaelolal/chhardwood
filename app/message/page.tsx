@@ -8,7 +8,7 @@ export default function Message() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <main style={{ minHeight: "100vh" }}>
+    <main>
       <div className="row py-5">
         <h1 className="fs-4 text-center text-primary m-0 p-0">Get In Touch</h1>
         <h2 className="body-text fs-6 text-center m-0 mb-2">

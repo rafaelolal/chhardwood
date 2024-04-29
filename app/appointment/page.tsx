@@ -1,6 +1,6 @@
 export default function Appointment() {
   return (
-    <main style={{ minHeight: "100vh" }}>
+    <main>
       <div className="row py-5">
         <h1 className="fs-4 text-center text-primary m-0 p-0">
           Book an Appointment
