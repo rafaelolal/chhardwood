@@ -19,14 +19,15 @@ export default function RootLayout({
   return (
     <>
       <head>
-        <Script src="/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+        <Script
+          src="/chhardwood/bootstrap.bundle.min.js"
+          strategy="beforeInteractive"
+        />
       </head>
 
       <html lang="en">
         <body className={inter.className}>
           <Navbar />
-          <div id="google_translate_element"></div>
-          <button id="translateButton">Translate</button>
           <div className="container-fluid p-0 m-0">{children}</div>
           <Footer />
         </body>

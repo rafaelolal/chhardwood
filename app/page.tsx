@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container py-5 text-center">
           <div className="position-relative logo mx-auto d-block">
             <Image
-              src="/images/logo.png"
+              src="/chhardwood/images/logo.png"
               fill
               style={{ objectFit: "contain" }}
               alt="CH Hardwood Floors Logo"
@@ -20,7 +20,6 @@ export default function Home() {
           <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
           <Link href="/contact" className="btn btn-tertiary mx-2">
             Contact us
-            
           </Link>
           <Link href="/message" className="btn btn-tertiary mx-2">
             Contact Us
@@ -32,7 +31,7 @@ export default function Home() {
               href="https://www.instagram.com/ch_hardwoodfloors/"
             >
               <Image
-                src="/icons/instagram.png"
+                src="/chhardwood/icons/instagram.png"
                 width={35}
                 height={35}
                 alt="Instagram"
@@ -43,7 +42,7 @@ export default function Home() {
               href="https://www.facebook.com/chhardwoodfloors"
             >
               <Image
-                src="/icons/facebook.png"
+                src="/chhardwood/icons/facebook.png"
                 width={35}
                 height={35}
                 alt="Facebook"
@@ -51,7 +50,7 @@ export default function Home() {
             </a>
             <a className="mx-2" href="">
               <Image
-                src="/icons/phone-call.png"
+                src="/chhardwood/icons/phone-call.png"
                 width={35}
                 height={35}
                 alt="Phone Number"
@@ -65,7 +64,7 @@ export default function Home() {
         <div className="col d-none d-sm-flex">
           <Image
             className="ms-auto me-4"
-            src="/images/test.jpg"
+            src="/chhardwood/images/test.jpg"
             height={400}
             width={400}
             alt="Paint bucket"
@@ -87,7 +86,7 @@ export default function Home() {
             style={{ width: "100%", height: "300px" }}
           >
             <Image
-              src="/images/paint.jpg"
+              src="/chhardwood/images/paint.jpg"
               alt="Paint Bucket"
               fill
               style={{ objectFit: "contain" }}

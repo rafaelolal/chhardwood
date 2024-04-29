@@ -5,10 +5,9 @@ export default function Footer() {
   return (
     <div className="container-fluid m-0 bg-primary pt-4 px-1">
       <div className="row">
-        
         <div className="col-12 col-md-3 py-3 text-center">
           <Image
-            src="/images/logo.png"
+            src="/chhardwood/images/logo.png"
             width={80}
             height={80}
             alt="CH HardWood Logo"
@@ -130,7 +129,7 @@ export default function Footer() {
               href="https://www.instagram.com/ch_hardwoodfloors/"
             >
               <Image
-                src="/icons/instagram.png"
+                src="/chhardwood/icons/instagram.png"
                 width={35}
                 height={35}
                 alt="Instagram"
@@ -141,7 +140,7 @@ export default function Footer() {
               href="https://www.facebook.com/chhardwoodfloors"
             >
               <Image
-                src="/icons/facebook.png"
+                src="/chhardwood/icons/facebook.png"
                 width={35}
                 height={35}
                 alt="Facebook"
@@ -149,7 +148,7 @@ export default function Footer() {
             </a>
             <a className="mx-2" href="">
               <Image
-                src="/icons/phone-call.png"
+                src="/chhardwood/icons/phone-call.png"
                 width={35}
                 height={35}
                 alt="Phone Number"
