@@ -148,7 +148,7 @@ export default function Navbar() {
 
               <li className="nav-item position-relative logo mx-auto d-block">
                 <Image
-                  src="/images/logo.png"
+                  src="/chhardwood/images/logo.png"
                   fill
                   alt="CH Hardwood Floors Logo"
                   style={{ objectFit: "contain" }}

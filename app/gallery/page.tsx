@@ -7,15 +7,15 @@ type ImageType = {
 
 export default function Gallery() {
   const images: ImageType[] = [
-    { alt: "Image 1", link: "/images/test1.jpg" },
-    { alt: "Image 2", link: "/images/test2.jpg" },
-    { alt: "Image 1", link: "/images/test3.jpg" },
-    { alt: "Image 1", link: "/images/test1.jpg" },
-    { alt: "Image 2", link: "/images/test2.jpg" },
-    { alt: "Image 1", link: "/images/test3.jpg" },
-    { alt: "Image 1", link: "/images/test1.jpg" },
-    { alt: "Image 2", link: "/images/test2.jpg" },
-    { alt: "Image 1", link: "/images/test3.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test1.jpg" },
+    { alt: "Image 2", link: "/chhardwood/images/test2.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test3.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test1.jpg" },
+    { alt: "Image 2", link: "/chhardwood/images/test2.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test3.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test1.jpg" },
+    { alt: "Image 2", link: "/chhardwood/images/test2.jpg" },
+    { alt: "Image 1", link: "/chhardwood/images/test3.jpg" },
   ];
 
   return (
