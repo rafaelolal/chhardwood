@@ -9,6 +9,10 @@
 
 main {
   background-color: white;
+  min-height: 100vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
 }
 
 .body-text {
@@ -187,4 +191,11 @@ main {
   border-radius: 0;
   padding: 0;
   font-size: 0.8rem;
+}    
+
+.btn-close{
+  --bs-btn-close-bg: none;
 }
+
+
+
