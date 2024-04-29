@@ -145,14 +145,39 @@ export default function Home() {
       </div>
 
       <div className="row wood-bg py-5 m-0 ">
-        <h6 className="text-light text-center p-3 p-sm-5 fs-6">
+        <h6 className="text-light text-center p-3 p-sm-5 fs-7">
           LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
         </h6>
         <Link href="/gallery" className="btn btn-tertiary mx-auto my-3">
           View Our Work
         </Link>
       </div>
-      <div className="row bg-light py-5"></div>
+      <div className="row bg-light py-5">
+        <h6 className="text-primary text-center p-3 p-sm-5 fs-4">
+          Our Best Service
+        </h6>
+        <div className="card p-0 mx-auto bg-light" style={{ width: "17rem" }}>
+          <div
+            className="card-img-top position-relative"
+            style={{ height: 200, width: "100%" }}
+          >
+            <Image
+              src="/chhardwood/images/test2.jpg"
+              alt="random service"
+              fill
+              objectFit="cover"
+            />
+          </div>
+
+          <div className="card-body text-center">
+            <h5 className="card-title fs-6">Service 1</h5>
+            <p className="card-text fs-7">Description of Service 1</p>
+            <Link href="/service" className="btn btn-tertiary fs-7">
+              More
+            </Link>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
