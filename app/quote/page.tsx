@@ -9,16 +9,17 @@ export default function Quote() {
 
   return (
     <main>
-      <div className="row pt-5">
-        <h1 className="fs-4 text-center text-primary m-0 p-0">Get A Quote</h1>
-        <h2 className="body-text fs-6 text-center m-0 mb-2">
-          Let Us Know What Interests You
+      <div className="row w-100 m-0 mb-4 py-5 wood-bg-2 border-bottom border-top border-light border-3">
+        <h1 className="fs-4 text-center text-light m-0 p-0">Get A Quote</h1>
+        <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
+          Let us know what interests you
         </h2>
+        <div className="bar" />
       </div>
 
       <form onSubmit={() => setSubmitted(true)} action={emailHandleSubmit}>
         <div className="row py-4">
-          <div className="col-9 mx-auto">
+          <div className="col-9 d-flex flex-column mx-auto">
             <div className="mb-3">
               <input
                 type="text"
@@ -52,7 +53,7 @@ export default function Quote() {
               ></textarea>
             </div>
 
-            <div className="mb-3">
+            <div className="mb-3 ms-auto">
               <button
                 type="submit"
                 className={clsx("btn btn-primary mb-3", {

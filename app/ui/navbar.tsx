@@ -23,11 +23,11 @@ export default function Navbar() {
         </button>
 
         <div
-          className="offcanvas offcanvas-top h-100"
+          className="offcanvas offcanvas-top fs-7"
           tabIndex={-1}
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
-          style={{ transition: "0.1s" }}
+          style={{ transition: "0.1s", height: "100vh" }}
         >
           <div className="offcanvas-header m-0 bg-primary">
             <h1
@@ -38,17 +38,21 @@ export default function Navbar() {
             </h1>
 
             <button
+              className="navbar-toggler text-light fs-2 ms-auto "
               type="button"
-              className="btn-close text-light"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
               X
             </button>
           </div>
-          <div className="offcanvas-body bg-primary navbar-text ">
-            <ul className="navbar-nav justify-content-start h-100 pt-5">
-              <li className="nav-item text-light">
+
+          <div
+            className="offcanvas-body bg-primary navbar-text d-flex flex-column p-2"
+            style={{ height: "fit-content" }}
+          >
+            <ul className="navbar-nav justify-content-start pt-5 flex-grow-1">
+              <li className="nav-item text-light" data-bs-dismiss="offcanvas">
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
@@ -58,7 +62,7 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item ">
+              <li className="nav-item " data-bs-dismiss="offcanvas">
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
@@ -68,7 +72,7 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item" data-bs-dismiss="offcanvas">
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
@@ -78,39 +82,17 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li className="nav-item" data-bs-dismiss="offcanvas">
+                <Link
+                  className="nav-link active text-light"
+                  aria-current="page"
+                  href="/contact"
                 >
                   CONTACT US
-                </a>
-
-                <ul className="dropdown-menu bg-tertiary">
-                  <li>
-                    <Link className="dropdown-item" href="/message">
-                      Send Us A Message
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link className="dropdown-item" href="/appointment">
-                      Book An Appointment
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link className="dropdown-item" href="/quote">
-                      Get A Quote
-                    </Link>
-                  </li>
-                </ul>
+                </Link>
               </li>
 
-              <li className="nav-item ">
+              <li className="nav-item " data-bs-dismiss="offcanvas">
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
@@ -131,30 +113,30 @@ export default function Navbar() {
                   >
                     LANGUAGE
                   </a>
-                  <ul className="dropdown-menu bg-tertiary">
+                  <ul className="dropdown-menu bg-primary fs-7">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item text-tertiary" href="#">
                         English
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item text-tertiary" href="#">
                         Portuguese
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
-
-              <li className="nav-item position-relative logo mx-auto d-block">
-                <Image
-                  src="/chhardwood/images/logo.png"
-                  fill
-                  alt="CH Hardwood Floors Logo"
-                  style={{ objectFit: "contain" }}
-                />
-              </li>
             </ul>
+            <div className="mx-auto">
+              <Image
+                src="/chhardwood/images/logo.png"
+                width={85}
+                height={85}
+                alt="CH Hardwood Floors Logo"
+                objectFit="contain"
+              />
+            </div>
           </div>
         </div>
       </div>
