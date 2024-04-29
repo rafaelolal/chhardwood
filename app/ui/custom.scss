@@ -1,207 +1,190 @@
 @import "./colors";
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-*{
+* {
   font-family: "Krona One", sans-serif;
-
 }
 
-main{
+main {
   background-color: white;
 }
 
-
 .body-text {
-    font-family: "League Spartan", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .test{
-    background-image: url("/images/hardwood-floor.jpg");
-    background-position: right bottom;
-    background-size: auto 80vh;
-    box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
-    
+.test {
+  background-image: url("/images/hardwood-floor.jpg");
+  background-position: right bottom;
+  background-size: auto 80vh;
+  box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
+}
+.header-bg {
+  background-image: url("/images/hardwood-floor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
+  height: fit-content;
+  width: 100%;
+}
 
-
-  }
-  .header-bg{
-    background-image: url("/images/hardwood-floor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right top;
-    box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
-    height: fit-content;
-    width: 100%;
-  }
-
-
-.wood-bg{
+.wood-bg {
   background-image: url("/images/hardwood-floor.jpg");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
   box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
-
 }
 
+.btn {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.8rem;
+  max-width: fit-content;
+  border-radius: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  .btn{
-    padding: 0.4rem 1.1rem;
-    font-size: 0.8rem ;
-    max-width: fit-content;
-    border-radius: 0;
-    border-radius: 20px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    
-  
-  }
+.btn-secondary {
+  color: $light;
+  background-color: $secondary;
+  border-color: $secondary;
+}
 
-  .btn-secondary {
-    color: $light;
-    background-color: $secondary;
-    border-color: $secondary;
-  }
+.btn-tertiary {
+  color: $light;
+  background-color: $tertiary;
+  border-color: $tertiary;
+}
 
-  .btn-tertiary {
-    color: $light;
-    background-color: $tertiary;
-    border-color: $tertiary;
-  }
+.btn-border {
+  color: $light;
+  background-color: transparent;
+  border-color: $light;
 
-  .btn-border {
-    color: $light;
-    background-color: transparent;
-    border-color: $light;
+  border-width: 4px;
+}
 
-   
-    border-width: 4px;
-  }
+.bullet-points {
+  color: $tertiary;
+}
 
-  .bullet-points{
-    color: $tertiary;
-  }
+.bullet-points p {
+  font-family: "League Spartan", sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.bullet-points p span {
+  background-color: $primary;
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  .bullet-points p{
-    font-family: "League Spartan", sans-serif;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .bullet-points p span{
-    background-color: $primary;
-    height: 13px;
-    width: 13px;
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
+.dropdown-menu {
+  border: 0;
+  color: $light;
+}
 
-  }
+.logo {
+  width: 150px;
+  height: 150px;
+  filter: saturate(60%);
+}
 
-  .dropdown-menu{
-    border: 0;
-    color: $light;
+@media (max-width: 576px) {
+  .logo {
+    width: 90px;
+    height: 90px;
   }
-  
-  .logo{
-    width: 150px;
-    height: 150px;
-    filter: saturate(60%);
-  }
+}
+.fs-7 {
+  font-size: 0.8rem;
+}
 
-  @media (max-width: 576px) {
-    .logo {
-      width: 90px;
-      height: 90px;
-    }
-  }
-  .fs-7{
-    font-size: 0.8rem;
-  }
+.fs-8 {
+  font-size: 0.7rem;
+}
 
-  .fs-8{
-    font-size: 0.7rem;
-  }
+.fs-9 {
+  font-size: 0.6rem;
+}
 
-  .fs-9{
-    font-size: 0.6rem
-  }
-
-.navbar-text li{
+.navbar-text li {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   text-align: center;
-    
 }
 
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus{
+.navbar-toggler-icon:focus {
   border: 0;
   box-shadow: none;
   outline: none;
 }
 
-.toggler-icon{
-  width:30px;
+.toggler-icon {
+  width: 30px;
   height: 3.5px;
   background-color: $light;
   display: block;
   transition: all 0.2s;
 }
 
-.middle-bar{
+.middle-bar {
   margin: 7px auto;
 }
 
-.navbar-toggler .top-bar{
+.navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
 }
 
-.navbar-toggler .collapsed .middle-bar{
+.navbar-toggler .collapsed .middle-bar {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-.navbar-toggler .top-bar{
+.navbar-toggler .top-bar {
   transform: rotate(-45deg);
   transform-origin: 10% 10%;
 }
 
-.navbar-toggler.collasped .top-bar{
+.navbar-toggler.collasped .top-bar {
   transform: rotate(0);
 }
 
-.navbar-toggler.collasped .bottom-bar{
+.navbar-toggler.collasped .bottom-bar {
   transform: rotate(0);
 }
 
-.navbar-toggler .middle-bar{
+.navbar-toggler .middle-bar {
   opacity: 1;
   filter: alpha(opacity = 100);
 }
 
-
-.bar{
+.bar {
   margin: auto;
   height: 3px;
   width: 65px;
   background-color: $primary;
-
 }
 
-
-.input-box{
+.input-box {
   font-family: "League Spartan", sans-serif;
   border: 0;
   border-bottom: 3px solid $primary;
   border-radius: 0;
   padding: 0;
   font-size: 0.8rem;
-
 }

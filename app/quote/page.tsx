@@ -1,4 +1,12 @@
+"use client";
+
+import { useState } from "react";
+import { emailHandleSubmit } from "../lib/sendEmail";
+import clsx from "clsx";
+
 export default function Quote() {
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <main>
       <div className="row pt-5">
@@ -8,7 +16,7 @@ export default function Quote() {
         </h2>
       </div>
 
-      <form>
+      <form onSubmit={() => setSubmitted(true)} action={emailHandleSubmit}>
         <div className="row py-4">
           <div className="col-9 mx-auto">
             <div className="mb-3">
@@ -16,7 +24,9 @@ export default function Quote() {
                 type="text"
                 className="form-control input-box"
                 id="fullNameInput"
+                name="fullNameInput"
                 placeholder="Full Name"
+                required
               />
             </div>
 
@@ -25,7 +35,9 @@ export default function Quote() {
                 type="email"
                 className="form-control input-box"
                 id="emailInput"
+                name="emailInput"
                 placeholder="Email Address"
+                required
               />
             </div>
 
@@ -34,12 +46,19 @@ export default function Quote() {
                 className="form-control input-box"
                 placeholder="Provide important details here..."
                 id="contentInput"
+                name="contentInput"
                 rows={3}
+                required
               ></textarea>
             </div>
 
             <div className="mb-3">
-              <button type="submit" className="btn btn-primary mb-3">
+              <button
+                type="submit"
+                className={clsx("btn btn-primary mb-3", {
+                  disabled: submitted,
+                })}
+              >
                 Send
               </button>
             </div>
