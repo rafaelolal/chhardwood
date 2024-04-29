@@ -82,42 +82,14 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item dropdown ">
-                <a
-                  className="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li className="nav-item" data-bs-dismiss="offcanvas">
+                <Link
+                  className="nav-link active text-light"
+                  aria-current="page"
+                  href="/contact"
                 >
                   CONTACT US
-                </a>
-
-                <ul className="dropdown-menu bg-primary fs-7 ">
-                  <li data-bs-dismiss="offcanvas">
-                    <Link
-                      className="dropdown-item text-tertiary"
-                      href="/message"
-                    >
-                      Send Us A Message
-                    </Link>
-                  </li>
-
-                  <li data-bs-dismiss="offcanvas">
-                    <Link
-                      className="dropdown-item text-tertiary"
-                      href="/appointment"
-                    >
-                      Book An Appointment
-                    </Link>
-                  </li>
-
-                  <li data-bs-dismiss="offcanvas">
-                    <Link className="dropdown-item text-tertiary" href="/quote">
-                      Get A Quote
-                    </Link>
-                  </li>
-                </ul>
+                </Link>
               </li>
 
               <li className="nav-item " data-bs-dismiss="offcanvas">

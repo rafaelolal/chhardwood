@@ -11,11 +11,21 @@ type ImageListProps = {
 
 export default function ImageList({ images }: ImageListProps) {
   return (
-    <div className="row py-2 justify-content-evenly">
+    <div className="row g-3 g-lg-4 row-cols-2 row-cols-sm-3 row-cols-md-4">
       {images.map((image, i) => {
         return (
-          <div className="col-auto p-0" key={i}>
-            <Image src={image.link} alt={image.alt} width={500} height={300} />
+          <div className="col">
+            <div
+              className="position-relative card-img"
+              style={{ width: "100%", height: "300px" }}
+            >
+              <Image
+                src={image.link}
+                alt={image.alt}
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </div>
         );
       })}

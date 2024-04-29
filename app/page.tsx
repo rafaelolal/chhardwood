@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="p-0">
-      <div className="header-bg pt-5 border-top border-light border-3">
+      <div
+        className="wood-bg pt-5 border-bottom border-top border-light border-3"
+        style={{ height: "fit-content" }}
+      >
         <div className="container py-5 text-center">
           <div className="position-relative logo mx-auto d-block">
             <Image
@@ -60,7 +63,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row bg-white p-5">
+      <div className="row bg-white px-4 py-5">
         <div className="col d-none d-sm-flex">
           <Image
             className="ms-auto me-4"
@@ -92,25 +95,51 @@ export default function Home() {
               style={{ objectFit: "contain" }}
             />
           </div>
-
-          <p className="pt-4 m-0 fs-6 text-primary">Our promise to you</p>
-          <div className="bullet-points">
-            <p>
-              {" "}
-              <span></span> Satisfaction Guaranteed
+          <div className="triangle-with-partial-borders mt-5 w-100">
+            <p className="py-3 m-0 fs-6 text-primary text-center">
+              Our Promise to You
             </p>
-            <p>
-              {" "}
-              <span></span> Exceeding expectations
-            </p>
-            <p>
-              {" "}
-              <span></span> Commitment to quality
-            </p>
-            <p>
-              {" "}
-              <span></span> Lorem ipsum dolor
-            </p>
+            <div className="text-dark fs-8 text-center">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#46230D"
+                  className="bi bi-check-lg me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                </svg>
+                Satisfaction Guaranteed
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#46230D"
+                  className="bi bi-check-lg me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                </svg>
+                Exceeding expectations
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#46230D"
+                  className="bi bi-check-lg me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                </svg>
+                Commitment to quality
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,7 +148,7 @@ export default function Home() {
         <h6 className="text-light text-center p-3 p-sm-5 fs-6">
           LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
         </h6>
-        <Link href="/gallery" className="btn btn-secondary mx-auto my-3">
+        <Link href="/gallery" className="btn btn-tertiary mx-auto my-3">
           View Our Work
         </Link>
       </div>
