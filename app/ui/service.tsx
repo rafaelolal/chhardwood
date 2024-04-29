@@ -17,11 +17,11 @@ type ServiceProps = {
 
 export default function Service({ service }: ServiceProps) {
   return (
-    <div className="col-12 col-sm-6 col-lg-3 my-3">
+    <div className="col">
       <div className="card mx-auto bg-light" style={{ width: "17rem" }}>
         <div
           className="card-img-top position-relative"
-          style={{ height: 130, width: "100%" }}
+          style={{ height: 200, width: "100%" }}
         >
           <Image
             src={service.image.link}

@@ -62,10 +62,10 @@ export default function Services() {
   ];
 
   return (
-    <main>
-      <div className="row py-4">
-        <h1 className="fs-4 text-center text-primary m-0 p-0">Services</h1>
-        <h2 className="body-text fs-6 text-center m-0 mb-2">
+    <main className="pb-5">
+      <div className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-top border-light border-3">
+        <h1 className="fs-4 text-center text-light m-0 p-0">Services</h1>
+        <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
           A list of our services
         </h2>
         <div className="bar" />
