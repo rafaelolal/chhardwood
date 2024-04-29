@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="p-0">
       <div className="header-bg pt-5 border-top border-light border-3">
         <div className="container py-5 text-center">
           <div className="position-relative logo mx-auto d-block">
@@ -15,13 +15,13 @@ export default function Home() {
             />
           </div>
 
-          <h6 className="text-tertiary fs-6 fs-sm-5 pt-4">TIMELESS ELEGANCE</h6>
-          <h6 className="text-tertiary fs-7 fs-sm-6">MEETS EXCEPTIONAL</h6>
-          <h6 className="text-light fs-3 fs-sm-4 pb-4">CRAFTSMANSHIP</h6>
-          <Link href="/contact" className="btn btn-tertiary mx-2">
-            Contact us
+          <h2 className="text-tertiary fs-6 pt-4">TIMELESS ELEGANCE</h2>
+          <h2 className="text-tertiary fs-7">MEETS EXCEPTIONAL</h2>
+          <h2 className="text-light fs-3 pb-4">CRAFTSMANSHIP</h2>
+          <Link href="/services" className="btn btn-tertiary m-2">
+            Our Services
           </Link>
-          <Link href="/message" className="btn btn-tertiary mx-2">
+          <Link href="/contact" className="btn btn-tertiary m-2">
             Contact Us
           </Link>
 
@@ -116,13 +116,14 @@ export default function Home() {
       </div>
 
       <div className="row wood-bg py-5 m-0 ">
-        <h3 className="text-light text-center m-1 m-sm-4 p-2 p-sm-3">
+        <h6 className="text-light text-center p-3 p-sm-5 fs-6">
           LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
-        </h3>
+        </h6>
         <Link href="/gallery" className="btn btn-secondary mx-auto my-3">
           View Our Work
         </Link>
       </div>
+      <div className="row bg-light py-5"></div>
     </main>
   );
 }
