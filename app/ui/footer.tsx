@@ -124,7 +124,7 @@ export default function Footer() {
           <p className="text-secondary fs-8">chhardwood@hotmail.com</p>
           <h3 className="text-tertiary fs-7 py-2">Social Media</h3>
           <div className="pb-2">
-            <a
+            <Link
               className="mx-2"
               href="https://www.instagram.com/ch_hardwoodfloors/"
             >
@@ -134,8 +134,8 @@ export default function Footer() {
                 height={35}
                 alt="Instagram"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               className="mx-2"
               href="https://www.facebook.com/chhardwoodfloors"
             >
@@ -145,15 +145,15 @@ export default function Footer() {
                 height={35}
                 alt="Facebook"
               />
-            </a>
-            <a className="mx-2" href="">
+            </Link>
+            <Link className="mx-2" href="/contact">
               <Image
                 src="/chhardwood/icons/phone-call.png"
                 width={35}
                 height={35}
                 alt="Phone Number"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

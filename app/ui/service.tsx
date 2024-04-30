@@ -27,7 +27,7 @@ export default function Service({ service }: ServiceProps) {
             src={service.image.link}
             alt={service.image.alt}
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
           />
         </div>
 

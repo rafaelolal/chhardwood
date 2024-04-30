@@ -96,7 +96,7 @@ export default function Navbar() {
                 <Link
                   className="nav-link active text-light"
                   aria-current="page"
-                  href="chhardwood/help"
+                  href="/help"
                 >
                   HELP
                 </Link>
@@ -127,7 +127,6 @@ export default function Navbar() {
                   </ul>
                 </div>
               </li> */}
-
             </ul>
             <div className="mx-auto">
               <Image
@@ -135,7 +134,7 @@ export default function Navbar() {
                 width={85}
                 height={85}
                 alt="CH Hardwood Floors Logo"
-                objectFit="contain"
+                style={{ objectFit: "contain" }}
               />
             </div>
           </div>
