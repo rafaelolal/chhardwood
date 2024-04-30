@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book an Appointment | CH Hardwood Floors",
+  description:
+    "Schedule an appointment with CH Hardwood Floors for your flooring needs. We offer installation, refinishing, sanding, and repair services.",
+  keywords:
+    "flooring, hardwood, wood, floors, installation, refinishing, sanding, repair, Tri-State Area, New York, Pennsylvania, South Jersey, appointment, schedule, services, installation, refinishing, sanding, repair",
+};
+
 export default function Appointment() {
   return (
     <main>

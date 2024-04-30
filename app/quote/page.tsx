@@ -1,12 +1,15 @@
-"use client";
+import { Metadata } from "next";
+import QuoteForm from "../ui/quote-form";
 
-import { useState } from "react";
-import { emailHandleSubmit } from "../lib/sendEmail";
-import clsx from "clsx";
+export const metadata: Metadata = {
+  title: "Get a Quote | CH Hardwood Floors",
+  description:
+    "Get a quote from CH Hardwood Floors for your flooring needs. We offer installation, refinishing, sanding, and repair services.",
+  keywords:
+    "flooring, hardwood, wood, floors, installation, refinishing, sanding, repair, Tri-State Area, New York, Pennsylvania, South Jersey, quote, estimate, pricing, cost, services, installation, refinishing, sanding, repair",
+};
 
 export default function Quote() {
-  const [submitted, setSubmitted] = useState(false);
-
   return (
     <main>
       <div className="row w-100 m-0 mb-4 py-5 wood-bg-2 border-bottom border-top border-light border-3">
@@ -17,55 +20,7 @@ export default function Quote() {
         <div className="bar" />
       </div>
 
-      <form onSubmit={() => setSubmitted(true)} action={emailHandleSubmit}>
-        <div className="row py-4">
-          <div className="col-9 d-flex flex-column mx-auto">
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control input-box"
-                id="fullNameInput"
-                name="fullNameInput"
-                placeholder="Full Name"
-                required
-              />
-            </div>
-
-            <div className="mb-3">
-              <input
-                type="email"
-                className="form-control input-box"
-                id="emailInput"
-                name="emailInput"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-
-            <div className="mb-3">
-              <textarea
-                className="form-control input-box"
-                placeholder="Provide important details here..."
-                id="contentInput"
-                name="contentInput"
-                rows={3}
-                required
-              ></textarea>
-            </div>
-
-            <div className="mb-3 ms-auto">
-              <button
-                type="submit"
-                className={clsx("btn btn-primary mb-3", {
-                  disabled: submitted,
-                })}
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
+      <QuoteForm />
     </main>
   );
 }
