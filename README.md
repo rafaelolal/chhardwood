@@ -2,9 +2,43 @@
 
 - [ ] Replace Rafael's Google appointments
 - [ ] Replace receiving email
-- [ ] copy phone number to clipboard, display phone number?
 - [ ] change footer address
 - [ ] Add page translation
+- [ ] create variables for things like phone number, addresses, emails... Anything that repeats
+- [ ] 1 h1 heading per page
+- [ ] ~2 h2 headings per page
+- [ ] ~500 words of content in p tags per page
+- [ ] as many meta tags as possible for every page
+- [ ] check over alt text for each image, make sure it is good
+- [ ] make the services page have more personality since there are only 4 services
+- [ ] Highlight this in its own card in services: Mobile showroom available we have lot of samples of the material that we sell so we can take it to your house and show you in your house to see what match better with your furniture
+- [ ] fix strong tags or preferably use fw-bold. Note for DJ: try to do things in aa way where they affect things globally. For example, the body-text class is not affecting how the strong tag comes out or how the fw-_ classes work. Also, instead of using fs-_ all the time, just change the size of h1 tags by default.
+- [ ] home page section 2 looks strange, the about us section, it just feels off centered somehow
+- [ ] make use of semantic tags and tags important for SEO: If something is a section, use section and not div, if something is a footer...and so on semantic tags include:
+      "article",
+      "aside",
+      "details",
+      "figcaption",
+      "figure",
+      "footer",
+      "header",
+      "main",
+      "mark",
+      "nav",
+      "section",
+      "summary",
+      "time",
+      "address",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6"
+- [ ] maybe embed instagram posts????
+- [ ] make svgs into their own components
+- [ ] why is there so much white space at the bottom of pages? Something we can do?
+- [ ] stop using CSS background and instead use nextjs image tag to ensure all images we use are optimized. If possible? If necessary?
 
 # For DJ
 
