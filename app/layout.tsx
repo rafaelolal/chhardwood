@@ -26,7 +26,6 @@ export default function RootLayout({
       </head>
 
       <Script src="/chhardwood/bootstrap.bundle.min.js" />
-      <Script src="https://www.instagram.com/embed.js" />
 
       <html lang="en">
         <body className={inter.className}>
