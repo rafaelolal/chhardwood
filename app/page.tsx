@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="p-0">
-      <div
+    <>
+      <section
         className="wood-bg pt-5 border-bottom border-top border-light border-3"
         style={{ height: "fit-content" }}
       >
@@ -28,12 +28,15 @@ export default function Home() {
           </div>
 
           <h2 className="text-tertiary fs-6 pt-4">TIMELESS ELEGANCE</h2>
+
           <h2 className="text-tertiary fs-7">MEETS EXCEPTIONAL</h2>
+
           <h2 className="text-light fs-3 pb-4">CRAFTSMANSHIP</h2>
 
           <Link href="/services" className="btn btn-tertiary m-2">
             Our Services
           </Link>
+
           <Link href="/contact" className="btn btn-tertiary m-2">
             Contact Us
           </Link>
@@ -73,9 +76,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="row bg-white px-4 py-5">
+      <section className="row bg-white px-4 py-5">
         <div className="col d-none d-sm-flex my-auto">
           <Image
             className="ms-auto me-4"
@@ -85,6 +88,7 @@ export default function Home() {
             alt="Paint bucket"
           />
         </div>
+
         <div className="col d-flex flex-column">
           <h1 className="text-primary text-center text-sm-left fs-4">
             About Us <a className="text-secondary fs-1">|</a>
@@ -117,6 +121,7 @@ export default function Home() {
             <p className="py-3 m-0 fs-6 text-primary text-center">
               Our Promise to You
             </p>
+
             <div className="text-dark fs-6 text-center">
               <p className="body-text">
                 <svg
@@ -131,6 +136,7 @@ export default function Home() {
                 </svg>
                 Satisfaction Guaranteed
               </p>
+
               <p className="body-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +150,7 @@ export default function Home() {
                 </svg>
                 Exceeding expectations
               </p>
+
               <p className="body-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -160,16 +167,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="row wood-bg py-5 m-0 ">
-        <h6 className="text-light text-center p-3 p-sm-5 fs-7">
+      <section className="row wood-bg py-5 m-0 ">
+        <h2 className="text-light text-center p-3 p-sm-5 fs-7">
           LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
-        </h6>
+        </h2>
+
         <Link href="/gallery" className="btn btn-tertiary mx-auto my-3">
           View Our Work
         </Link>
-      </div>
+      </section>
 
       <section className="bg-light py-5">
         <div className="container">
@@ -186,6 +194,7 @@ export default function Home() {
             meticulously installing and refinishing floors, transforming houses
             into homes.
           </p>
+
           <p className="body-text">
             CHhardwood&rsquo;s reputation for excellence quickly spread
             throughout New Jersey. Higor&rsquo;s meticulous attention to detail
@@ -194,6 +203,7 @@ export default function Home() {
             expand his services beyond his local community, bringing
             CHhardwood&rsquo;s expertise to a wider audience.
           </p>
+
           <p className="body-text">
             With unwavering determination, Higor extended CHhardwood&rsquo;s
             reach to South Jersey, Pennsylvania, and New York. He carefully
@@ -203,6 +213,7 @@ export default function Home() {
             consultation to the final installation, CHhardwood ensures a
             seamless and stress-free experience for every client.
           </p>
+
           <p className="body-text">
             Higor&rsquo;s journey, fueled by passion and sawdust, has
             transformed CHhardwood into a leading flooring company across the
@@ -214,6 +225,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </>
   );
 }

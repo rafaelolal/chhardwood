@@ -9,18 +9,6 @@ export const metadata: Metadata = {
     "flooring, hardwood, wood, floors, installation, refinishing, sanding, repair, Tri-State Area, New York, Pennsylvania, South Jersey, services, installation, finishing, cleaning, repairs",
 };
 
-type ImageType = {
-  alt: string;
-  link: string;
-};
-
-type ServiceType = {
-  image: ImageType;
-  name: string;
-  description: string;
-  link: string;
-};
-
 export default function Services() {
   const services: ServiceType[] = [
     {
@@ -77,7 +65,10 @@ export default function Services() {
         <div className="bar" />
       </div>
 
-      <ServiceList services={services} />
+      <ServiceList
+        className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-3 justify-content-start"
+        services={services}
+      />
 
       <section className="container my-5">
         <h2 className="fs-5">Description of Services</h2>

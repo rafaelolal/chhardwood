@@ -1,18 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-
-type ImageType = {
-  alt: string;
-  link: string;
-};
+// import Link from "next/link";
 
 type ServiceProps = {
-  service: {
-    image: ImageType;
-    name: string;
-    description: string;
-    link: string;
-  };
+  service: ServiceType;
 };
 
 export default function Service({ service }: ServiceProps) {
@@ -32,8 +22,9 @@ export default function Service({ service }: ServiceProps) {
         </div>
 
         <div className="card-body text-center">
-          <h5 className="card-title fs-6">{service.name}</h5>
+          <h3 className="card-title fs-6">{service.name}</h3>
           <p className="card-text fs-7">{service.description}</p>
+
           {/* <Link href={service.link} className="btn btn-tertiary fs-7">
             More
           </Link> */}
