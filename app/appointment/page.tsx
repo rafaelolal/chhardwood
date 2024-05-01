@@ -23,8 +23,8 @@ export default function Appointment() {
         <iframe
           src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1VaKpKZxjN4QDrXJZsZdjsoSHbqdE2DdYbcqwuTeMKHAokU1s7oeJh6ejjCIlUchFutBkwHV9C?gv=true"
           style={{ border: 0 }}
-          width="100%"
-          height="1500"
+          width="99%"
+          height="1400"
           frameBorder="0"
         ></iframe>
       </section>
