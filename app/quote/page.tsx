@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import QuoteForm from "../ui/quote-form";
+import { PageHeading } from "../ui/page-heading";
 
 export const metadata: Metadata = {
   title: "Get a Quote | CH Hardwood Floors",
@@ -11,16 +12,17 @@ export const metadata: Metadata = {
 
 export default function Quote() {
   return (
-    <main>
-      <div className="row w-100 m-0 mb-4 py-5 wood-bg-2 border-bottom border-top border-light border-3">
-        <h1 className="fs-4 text-center text-light m-0 p-0">Get A Quote</h1>
-        <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
-          Let us know what interests you
-        </h2>
-        <div className="bar" />
-      </div>
+    <>
+      <section>
+        <PageHeading
+          title="Get A Quote"
+          subtitle="Let us know what interests you"
+        />
+      </section>
 
-      <QuoteForm />
-    </main>
+      <section>
+        <QuoteForm />
+      </section>
+    </>
   );
 }
