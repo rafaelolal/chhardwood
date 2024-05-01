@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Appointment() {
   return (
     <main>
-      <div className="row w-100 m-0 mb-4 py-5 wood-bg-2 border-bottom border-top border-light border-3">
+      <div className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-top border-light border-3">
         <h1 className="fs-4 text-center text-light m-0 p-0">
           Book an Appointment
         </h1>
@@ -25,8 +25,8 @@ export default function Appointment() {
         <iframe
           src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1VaKpKZxjN4QDrXJZsZdjsoSHbqdE2DdYbcqwuTeMKHAokU1s7oeJh6ejjCIlUchFutBkwHV9C?gv=true"
           style={{ border: 0 }}
-          width="100%"
-          height="1500"
+          width="99%"
+          height="1400"
           frameBorder="0"
         ></iframe>
       </div>
