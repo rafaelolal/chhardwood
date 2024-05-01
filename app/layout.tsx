@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import "./ui/globals.css";
 import "./ui/custom.scss";
 import { inter } from "./ui/fonts";
 import Navbar from "./ui/navbar";
 import Script from "next/script";
 import Footer from "./ui/footer";
+import QuickModal from "./ui/quick-modal";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "CH Hardwood Floors",
@@ -21,16 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <head>
-        <link rel="icon" href="/chhardwood/images/favicon.ico" />
-      </head>
-
       <Script src="/chhardwood/bootstrap.bundle.min.js" />
+
+      <Head>
+        <link rel="icon" href="/chhardwood/favicon.ico" key="favicon" />
+      </Head>
 
       <html lang="en">
         <body className={inter.className}>
           <Navbar />
-          <div className="container-fluid p-0 m-0">{children}</div>
+
+          <main className="container-fluid p-0 m-0">{children}</main>
+
+          <QuickModal />
+
           <Footer />
         </body>
       </html>

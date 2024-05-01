@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { PageHeading } from "../ui/page-heading";
 
 export const metadata: Metadata = {
   title: "Contact Us | CH Hardwood Floors",
@@ -22,18 +23,15 @@ export default function Contact() {
   ];
 
   return (
-    <main>
-      <div className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-top border-light border-3">
-        <h1 className="fs-4 text-center text-light m-0 p-0">
-          Ways to Contact Us
-        </h1>
-        <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
-          The best way to get in touch with us
-        </h2>
-        <div className="bar" />
-      </div>
+    <>
+      <section>
+        <PageHeading
+          title="Ways to Contact Us"
+          subtitle="The best way to get in touch with us"
+        />
+      </section>
 
-      <div className="mx-4 mt-5">
+      <section className="mx-4 mt-5">
         {pages.map((page) => (
           <Link
             href={page.link}
@@ -62,6 +60,7 @@ export default function Contact() {
               d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
             />
           </svg>
+
           <p>1 (732) 966 4169</p>
         </div>
 
@@ -78,7 +77,7 @@ export default function Contact() {
           </svg>
           <p>chhardwood@hotmail.com</p>
         </div>
-      </div>
+      </section>
 
       <section className="container my-5">
         <h2 className="fs-5">Contacting Us</h2>
@@ -95,6 +94,7 @@ export default function Contact() {
         <ul>
           <li>
             <strong>Explore Our Options:</strong>
+
             <p className="body-text">
               Visit our website to learn about the diverse range of flooring
               solutions we offer, from hardwood and vinyl to laminate, carpet,
@@ -102,8 +102,10 @@ export default function Contact() {
               allowing you to visualize the perfect fit for your home.
             </p>
           </li>
+
           <li>
             <strong>Schedule an Appointment:</strong>
+
             <p className="body-text">
               Ready to take the next step? Click the Make an Appointment button
               to book a consultation at your convenience. We will discuss your
@@ -111,23 +113,29 @@ export default function Contact() {
               recommendations.
             </p>
           </li>
+
           <li>
             <strong>Get a Quote:</strong>
+
             <p className="body-text">
               Curious about pricing? The Get a Quote option allows you to submit
               project details and receive a tailored estimate for your flooring
               installation or refinishing needs.
             </p>
           </li>
+
           <li>
             <strong>Message Us:</strong>
+
             <p className="body-text">
               Have a quick question or prefer written communication? Use the
               Message Us feature to send your inquiries directly.
             </p>
           </li>
+
           <li>
             <strong>Give Us a Call:</strong>
+
             <p className="body-text">
               For immediate assistance or a more personal touch, feel free to
               call us at 1 (732) 966 4169. Our friendly team is happy to answer
@@ -147,6 +155,7 @@ export default function Contact() {
               craftsmanship and exceptional results.
             </p>
           </li>
+
           <li>
             <strong>Comprehensive Services:</strong>
             <p className="body-text">
@@ -155,6 +164,7 @@ export default function Contact() {
               needs.
             </p>
           </li>
+
           <li>
             <strong>Quality Materials:</strong>
             <p className="body-text">
@@ -162,6 +172,7 @@ export default function Contact() {
               the durability and longevity of your new floors.
             </p>
           </li>
+
           <li>
             <strong>Customer Satisfaction:</strong>
             <p className="body-text">
@@ -179,6 +190,6 @@ export default function Contact() {
           </strong>
         </p>
       </section>
-    </main>
+    </>
   );
 }
