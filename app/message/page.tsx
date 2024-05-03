@@ -13,12 +13,7 @@ export const metadata: Metadata = {
 export default function Message() {
   return (
     <>
-      <section>
-        <PageHeading
-          title="Get In Touch"
-          subtitle="Let us know your thoughts"
-        />
-      </section>
+      <PageHeading title="Get In Touch" subtitle="Let us know your thoughts" />
 
       <section>
         <MessageForm />
