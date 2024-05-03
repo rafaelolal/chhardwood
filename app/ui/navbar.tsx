@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar wood-bg">
+    <nav className="navbar bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand text-light pt-2" href="/">
+        <Link className="navbar-brand krona-one text-light pt-2" href="/">
           CH HardWood
         </Link>
 
@@ -28,16 +28,16 @@ export default function Navbar() {
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div className="offcanvas-header m-0 bg-primary">
+          <div className="offcanvas-header bg-primary m-0 py-3 border-bottom border-4">
             <h1
-              className="offcanvas-title text-light border-0 navbar-brand"
+              className="offcanvas-title text-light navbar-brand pt-2"
               id="offcanvasNavbarLabel"
             >
               CH HardWood
             </h1>
 
             <button
-              className="navbar-toggler text-light fs-2 ms-auto "
+              className="navbar-toggler text-light fs-2 ms-auto krona-one"
               type="button"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -47,7 +47,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className="offcanvas-body bg-primary navbar-text d-flex flex-column p-2"
+            className="offcanvas-body bg-primary navbar-text d-flex flex-column p-2 "
             style={{ height: "fit-content" }}
           >
             <ul className="navbar-nav justify-content-start pt-5 flex-grow-1">
@@ -127,8 +127,7 @@ export default function Navbar() {
                 </div>
               </li> */}
             </ul>
-
-            <div className="mx-auto">
+            <div className="mx-auto mb-3">
               <Image
                 src="/chhardwood/images/logo.png"
                 width={85}

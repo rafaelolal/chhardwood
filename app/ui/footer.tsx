@@ -15,15 +15,15 @@ export default function Footer() {
 
           <h2 className="text-light fs-6">CH HardWood</h2>
 
-          <p className="text-secondary fs-8 py-1">
+          <p className="text-secondary py-1">
             Timeless Elegance Meets Exceptional Craftsmanship
           </p>
         </div>
 
-        <div className="col-12 col-sm-4 col-md-3 py-3 text-center text-md-start">
+        <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
           <h2 className="text-light fs-6">Navigation</h2>
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/services"
           >
@@ -31,7 +31,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/gallery"
           >
@@ -39,7 +39,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/messages"
           >
@@ -47,7 +47,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/appointment"
           >
@@ -55,7 +55,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/quote"
           >
@@ -63,7 +63,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href="/help"
           >
@@ -71,68 +71,50 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="col-12 col-sm-4 col-md-3 py-3 text-center text-md-start">
+        <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
           <h2 className="text-light fs-6">Services</h2>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href=""
           >
-            Sanding, Staining, or Finish
+            Installing
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href=""
           >
-            Steps:{" "}
-            <span className="text-quaternary">Replacement or Installation</span>
+            Finishing
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href=""
           >
-            Railings:{" "}
-            <span className="text-quaternary">Replacement or Installation</span>
+            Cleaning
           </Link>
 
           <Link
-            className="nav-link text-secondary fs-8 py-1"
+            className="nav-link text-secondary py-1"
             aria-current="page"
             href=""
           >
-            Dustless Service
-          </Link>
-
-          <Link
-            className="nav-link text-secondary fs-8 py-1"
-            aria-current="page"
-            href=""
-          >
-            Hardwood, COREtec, Laminate, Vinyl, or Carpet Installation
-          </Link>
-
-          <Link
-            className="nav-link text-secondary fs-8 py-1"
-            aria-current="page"
-            href=""
-          >
-            House Cleaning
+            Repairs
           </Link>
         </div>
 
-        <div className="col-12 col-sm-4 col-md-3 py-3 text-center text-md-start">
+        <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
           <h2 className="text-light fs-6 ">Contact Us</h2>
 
           <h3 className="text-tertiary fs-7 pt-2">Inquires</h3>
 
-          <p className="text-secondary fs-8">1 (732) 966-4169</p>
+          <p className="text-secondary">1 (732) 966-4169</p>
 
-          <p className="text-secondary fs-8">chhardwood@hotmail.com</p>
+          <p className="text-secondary">chhardwood@hotmail.com</p>
 
           <h3 className="text-tertiary fs-7 py-2">Social Media</h3>
 
@@ -171,12 +153,11 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
-
-      <div className="row bg-light py-3">
-        <small className="text-primary text-center fs-9">
-          ©2023 por CH Hardwood Floors. All rights reserved
-        </small>
+        <div className="col-12 bg-light text-center p-3">
+          <small className=" text-primary fs-7 ">
+            ©2023 por CH Hardwood Floors. All rights reserved
+          </small>
+        </div>
       </div>
     </footer>
   );
