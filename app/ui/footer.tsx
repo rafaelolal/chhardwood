@@ -174,9 +174,9 @@ export default function Footer() {
       </div>
 
       <div className="row bg-light py-3">
-        <p className="text-primary text-center fs-9 p-0 m-0">
+        <small className="text-primary text-center fs-9">
           ©2023 por CH Hardwood Floors. All rights reserved
-        </p>
+        </small>
       </div>
     </footer>
   );
