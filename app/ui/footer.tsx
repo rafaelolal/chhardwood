@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="container-fluid m-0 bg-primary pt-4 px-1">
-      <div className="row">
+    <footer className="container-fluid">
+      <div className="bg-primary row  pt-4">
         <div className="col-12 col-md-3 py-3 text-center">
           <Image
             src="/chhardwood/images/logo.png"
@@ -172,8 +172,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <div className="row bg-light py-3">
-        <p className=" text-primary text-center fs-9 p-0 m-0">
+        <p className="text-primary text-center fs-9 p-0 m-0">
           ©2023 por CH Hardwood Floors. All rights reserved
         </p>
       </div>

@@ -32,7 +32,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Navbar />
 
-          <main className="container-fluid p-0 m-0">{children}</main>
+          <main>{children}</main>
 
           <QuickModal />
 
