@@ -23,11 +23,10 @@ export default function Navbar() {
         </button>
 
         <div
-          className="offcanvas offcanvas-top fs-7"
+          className="offcanvas offcanvas-end fs-7"
           tabIndex={-1}
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
-          style={{ transition: "0.1s", height: "100vh" }}
         >
           <div className="offcanvas-header m-0 bg-primary">
             <h1
@@ -128,13 +127,13 @@ export default function Navbar() {
                 </div>
               </li> */}
             </ul>
+
             <div className="mx-auto">
               <Image
                 src="/chhardwood/images/logo.png"
                 width={85}
                 height={85}
                 alt="CH Hardwood Floors Logo"
-                style={{ objectFit: "contain" }}
               />
             </div>
           </div>

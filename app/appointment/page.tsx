@@ -12,12 +12,10 @@ export const metadata: Metadata = {
 export default function Appointment() {
   return (
     <>
-      <section>
-        <PageHeading
-          title="Book an Appointment"
-          subtitle="Meet with us whenever you are available"
-        />
-      </section>
+      <PageHeading
+        title="Book an Appointment"
+        subtitle="Meet with us whenever you are available"
+      />
 
       <section style={{ minHeight: "100%" }}>
         <iframe

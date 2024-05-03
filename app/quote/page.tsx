@@ -13,12 +13,10 @@ export const metadata: Metadata = {
 export default function Quote() {
   return (
     <>
-      <section>
-        <PageHeading
-          title="Get A Quote"
-          subtitle="Let us know what interests you"
-        />
-      </section>
+      <PageHeading
+        title="Get A Quote"
+        subtitle="Let us know what interests you"
+      />
 
       <section>
         <QuoteForm />
