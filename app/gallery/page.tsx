@@ -49,25 +49,21 @@ export default function Gallery() {
 
   return (
     <>
-      <main>
-        <section>
-          <PageHeading
-            title="Gallery"
-            subtitle="The best way to communicate what we do"
-          />
-        </section>
+      <PageHeading
+        title="Gallery"
+        subtitle="The best way to communicate what we do"
+      />
 
-        <section className="px-3 px-md-5 pt-3 pb-5">
-          <ImageList
-            className="row g-3 g-lg-4 row-cols-2 row-cols-sm-3 row-cols-md-4"
-            images={images}
-          />
-        </section>
+      <section className="px-3 px-md-5 pt-3 pb-5">
+        <ImageList
+          className="row g-3 g-lg-4 row-cols-2 row-cols-sm-3 row-cols-md-4"
+          images={images}
+        />
+      </section>
 
-        <section className="container my-5 d-flex flex-column align-items-center">
-          <InstagramEmbed />
-        </section>
-      </main>
+      <section className="container my-5 d-flex flex-column align-items-center">
+        <InstagramEmbed />
+      </section>
     </>
   );
 }

@@ -23,6 +23,7 @@
 
 ### Rafael
 
+- [ ] fix the issue with the header tag being inside main tag
 - [ ] Replace Rafael's Google appointments
 - [ ] Replace receiving email
 - [ ] create chhardwood@gmail.com

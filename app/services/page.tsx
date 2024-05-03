@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import ServiceList from "../ui/service-list";
+import { PageHeading } from "../ui/page-heading";
 
 export const metadata: Metadata = {
   title: "Services | CH Hardwood Floors",
@@ -54,23 +55,19 @@ export default function Services() {
   ];
 
   return (
-    <main className="pb-5">
-      <div className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-top border-light border-3">
-        <h1 className="fs-4 text-center text-light m-0 p-0">
-          Premium Flooring Services
-        </h1>
-        <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
-          Ways to Transform Your Home
-        </h2>
-        <div className="bar" />
-      </div>
-
-      <ServiceList
-        className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-3 justify-content-start"
-        services={services}
+    <>
+      <PageHeading
+        title="Premium Flooring Services"
+        subtitle="Ways to Transform Your Home"
       />
 
-      <section className="container my-5">
+      <section className="container-fluid">
+        <div className="row g-5 justify-content-center mt-3">
+          <ServiceList services={services} />
+        </div>
+      </section>
+
+      <section className="container-fluid my-5">
         <h2 className="fs-5">Description of Services</h2>
 
         <p className="body-text">
@@ -86,32 +83,38 @@ export default function Services() {
         <h2 className="fs-5">We offer a wide range of services including:</h2>
 
         <h3 className="fs-6">Installation:</h3>
+
         <ul>
           <li className="body-text">
             <strong>Hardwood:</strong> Enhance the elegance and value of your
             home with beautiful hardwood flooring. We install a variety of
             hardwood species, ensuring a perfect fit for your style and budget.
           </li>
+
           <li className="body-text">
             <strong>Vinyl:</strong> Enjoy the versatility and durability of
             vinyl flooring. We offer a wide selection of colors and patterns to
             complement any décor.
           </li>
+
           <li className="body-text">
             <strong>Laminate:</strong> Achieve the look of hardwood or stone at
             a fraction of the cost with laminate flooring. We provide expert
             installation for a seamless and long-lasting finish.
           </li>
+
           <li className="body-text">
             <strong>Carpet:</strong> Add warmth and comfort to your space with
             plush carpeting. We offer various carpet styles and materials to
             suit your needs and preferences.
           </li>
+
           <li className="body-text">
             <strong>Cork:</strong> Embrace the eco-friendly and sound-absorbing
             qualities of cork flooring. Our team ensures precise installation
             for a unique and sustainable flooring solution.
           </li>
+
           <li className="body-text">
             <strong>Stairs & Railings:</strong> Elevate the functionality and
             aesthetics of your staircase with our expert installation and
@@ -120,6 +123,7 @@ export default function Services() {
         </ul>
 
         <h3 className="fs-6">Sanding, Staining & Finishing:</h3>
+
         <p className="body-text">
           Revitalize your existing hardwood floors, stairs, and railings with
           our professional sanding, staining, and finishing services. We use
@@ -129,6 +133,7 @@ export default function Services() {
         </p>
 
         <h3 className="fs-6">Repairs:</h3>
+
         <p className="body-text">
           Do not let damaged floors detract from the beauty of your home. We
           offer comprehensive repair solutions for all types of flooring,
@@ -136,6 +141,7 @@ export default function Services() {
         </p>
 
         <h3 className="fs-6">House Cleaning:</h3>
+
         <p className="body-text">
           Enjoy a sparkling clean home with our professional house cleaning
           services. We provide thorough and efficient cleaning, leaving your
@@ -153,6 +159,7 @@ export default function Services() {
         </p>
 
         <h3 className="fs-6">Benefits of Choosing Us:</h3>
+
         <ul>
           <li className="body-text">
             <strong>Mobile Showroom:</strong> We bring the showroom to you!
@@ -165,10 +172,12 @@ export default function Services() {
             trusted suppliers, guaranteeing durability and longevity for your
             flooring investment.
           </li>
+
           <li className="body-text">
             <strong>Dustless Service Available:</strong> Minimize disruption and
             mess with our dustless sanding and refinishing services.
           </li>
+
           <li className="body-text">
             <strong>Comprehensive Solutions:</strong> From installation to
             repairs and cleaning, we offer a complete range of services to meet
@@ -183,6 +192,6 @@ export default function Services() {
           </strong>
         </p>
       </section>
-    </main>
+    </>
   );
 }

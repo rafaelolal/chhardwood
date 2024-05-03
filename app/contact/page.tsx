@@ -24,12 +24,10 @@ export default function Contact() {
 
   return (
     <>
-      <section>
-        <PageHeading
-          title="Ways to Contact Us"
-          subtitle="The best way to get in touch with us"
-        />
-      </section>
+      <PageHeading
+        title="Ways to Contact Us"
+        subtitle="The best way to get in touch with us"
+      />
 
       <section className="mx-4 mt-5">
         {pages.map((page) => (
