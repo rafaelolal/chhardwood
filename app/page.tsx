@@ -17,16 +17,17 @@ export default function Home() {
         className="wood-bg pt-5 border-bottom border-top border-light border-3"
         style={{ height: "fit-content" }}
       >
-        <div className="container py-5 text-center">
-          <div className="position-relative logo mx-auto d-block">
-            <Image
-              src="/chhardwood/images/logo.png"
-              fill
-              style={{ objectFit: "contain" }}
-              alt="CH Hardwood Floors Logo"
-            />
-          </div>
+        <div className="text-center">
+          <Image
+            className="logo"
+            src="/chhardwood/images/logo.png"
+            width={150}
+            height={150}
+            alt="CH Hardwood Floors Logo"
+          />
+        </div>
 
+        <div className="py-5 text-center">
           <h2 className="text-tertiary fs-6 pt-4">TIMELESS ELEGANCE</h2>
 
           <h2 className="text-tertiary fs-7">MEETS EXCEPTIONAL</h2>
@@ -78,105 +79,108 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="row bg-white px-4 py-5">
-        <div className="col d-none d-sm-flex my-auto">
-          <Image
-            className="ms-auto me-4"
-            src="/chhardwood/images/test.jpg"
-            height={400}
-            width={400}
-            alt="Paint bucket"
-          />
-        </div>
-
-        <div className="col d-flex flex-column">
-          <h1 className="text-primary text-center text-sm-left fs-4">
-            About Us <a className="text-secondary fs-1">|</a>
-          </h1>
-
-          <p className="mb-3 text-center text-sm-left body-text p-0">
-            CHhardwood has been transforming homes across the tri-state area for
-            over 15 years. Born in New Jersey, we have expanded our services to
-            include South Jersey, Pennsylvania, and New York, bringing our
-            passion for beautiful, functional floors to a wider audience. Our
-            expert team specializes in installation, refinishing, and repair of
-            hardwood, vinyl, laminate, carpet, and COREtec flooring, ensuring we
-            have a solution for every style and budget. With a commitment to
-            exceptional craftsmanship and customer service, CHhardwood is
-            dedicated to making your dream floors a reality.
-          </p>
-
-          <div
-            className="position-relative d-block d-sm-none"
-            style={{ width: "100%", height: "300px" }}
-          >
+      <section className="container-fluid bg-light py-5">
+        <div className="row">
+          <div className="col d-none d-sm-block my-auto text-center">
             <Image
-              src="/chhardwood/images/paint.jpg"
-              alt="Paint Bucket"
-              fill
-              style={{ objectFit: "contain" }}
+              src="/chhardwood/images/test.jpg"
+              height={400}
+              width={400}
+              alt="White walls dark shiny floor"
             />
           </div>
-          <div className="triangle-with-partial-borders mt-5 w-100">
-            <p className="py-3 m-0 fs-6 text-primary text-center">
-              Our Promise to You
+
+          <div className="col">
+            <h1 className="text-primary text-center text-sm-left fs-4">
+              About Us <a className="text-secondary fs-1">|</a>
+            </h1>
+
+            <p className="mb-3 text-center text-sm-left body-text">
+              CHhardwood has been transforming homes across the tri-state area
+              for over 15 years. Born in New Jersey, we have expanded our
+              services to include South Jersey, Pennsylvania, and New York,
+              bringing our passion for beautiful, functional floors to a wider
+              audience. Our expert team specializes in installation,
+              refinishing, and repair of hardwood, vinyl, laminate, carpet, and
+              COREtec flooring, ensuring we have a solution for every style and
+              budget. With a commitment to exceptional craftsmanship and
+              customer service, CHhardwood is dedicated to making your dream
+              floors a reality.
             </p>
 
-            <div className="text-dark fs-6 text-center">
-              <p className="body-text">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="#46230D"
-                  className="bi bi-check-lg me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
-                </svg>
-                Satisfaction Guaranteed
+            <div className="d-sm-none text-center">
+              <Image
+                src="/chhardwood/images/paint.jpg"
+                alt="Paint Bucket"
+                width={300}
+                height={300}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className="triangle-with-partial-borders mt-5 w-100">
+              <p className="py-3 fs-6 text-primary text-center">
+                Our Promise to You
               </p>
 
-              <p className="body-text">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="#46230D"
-                  className="bi bi-check-lg me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
-                </svg>
-                Exceeding expectations
-              </p>
+              <div className="text-dark fs-6 text-center">
+                <p className="body-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#46230D"
+                    className="bi bi-check-lg me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                  </svg>
+                  Satisfaction Guaranteed
+                </p>
 
-              <p className="body-text">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="#46230D"
-                  className="bi bi-check-lg me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
-                </svg>
-                Commitment to quality
-              </p>
+                <p className="body-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#46230D"
+                    className="bi bi-check-lg me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                  </svg>
+                  Exceeding expectations
+                </p>
+
+                <p className="body-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#46230D"
+                    className="bi bi-check-lg me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+                  </svg>
+                  Commitment to quality
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="row wood-bg py-5 m-0 ">
-        <h2 className="text-light text-center p-3 p-sm-5 fs-7">
-          LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS IMPORTANT
-        </h2>
+      <section className="container-fluid wood-bg py-5">
+        <div className="row">
+          <h2 className="text-light text-center p-3 fs-7">
+            LET US TAKE CARE OF YOUR NEEDS, SO YOU CAN FOCUS ON WHAT IS
+            IMPORTANT
+          </h2>
 
-        <Link href="/gallery" className="btn btn-tertiary mx-auto my-3">
-          View Our Work
-        </Link>
+          <Link href="/gallery" className="btn btn-tertiary mx-auto my-3">
+            View Our Work
+          </Link>
+        </div>
       </section>
 
       <section className="bg-light py-5">
