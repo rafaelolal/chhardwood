@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./ui/custom.scss";
 import { inter } from "./ui/fonts";
+import { krona_one } from "./ui/fonts";
 import Navbar from "./ui/navbar";
 import Script from "next/script";
 import Footer from "./ui/footer";
@@ -29,12 +30,12 @@ export default function RootLayout({
       </Head>
 
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${inter.variable} ${krona_one.variable}`}>
           <Navbar />
 
           <main>{children}</main>
 
-          <QuickModal />
+          {/* <QuickModal />*/}
 
           <Footer />
         </body>

@@ -80,7 +80,7 @@ export default function Contact() {
       <section className="container my-5">
         <h2 className="fs-5">Contacting Us</h2>
 
-        <p className="body-text">
+        <p>
           CH Hardwood Floors is dedicated to making your dream floors a reality,
           and we understand that getting started can come with questions. That
           is why we offer various convenient ways to connect and discuss your
@@ -93,7 +93,7 @@ export default function Contact() {
           <li>
             <strong>Explore Our Options:</strong>
 
-            <p className="body-text">
+            <p>
               Visit our website to learn about the diverse range of flooring
               solutions we offer, from hardwood and vinyl to laminate, carpet,
               and cork. Our mobile showroom brings the samples directly to you,
@@ -104,7 +104,7 @@ export default function Contact() {
           <li>
             <strong>Schedule an Appointment:</strong>
 
-            <p className="body-text">
+            <p>
               Ready to take the next step? Click the Make an Appointment button
               to book a consultation at your convenience. We will discuss your
               vision, project scope, and budget to provide personalized
@@ -115,7 +115,7 @@ export default function Contact() {
           <li>
             <strong>Get a Quote:</strong>
 
-            <p className="body-text">
+            <p>
               Curious about pricing? The Get a Quote option allows you to submit
               project details and receive a tailored estimate for your flooring
               installation or refinishing needs.
@@ -125,7 +125,7 @@ export default function Contact() {
           <li>
             <strong>Message Us:</strong>
 
-            <p className="body-text">
+            <p>
               Have a quick question or prefer written communication? Use the
               Message Us feature to send your inquiries directly.
             </p>
@@ -134,7 +134,7 @@ export default function Contact() {
           <li>
             <strong>Give Us a Call:</strong>
 
-            <p className="body-text">
+            <p>
               For immediate assistance or a more personal touch, feel free to
               call us at 1 (732) 966 4169. Our friendly team is happy to answer
               your questions and guide you through the process.
@@ -147,7 +147,7 @@ export default function Contact() {
         <ul>
           <li>
             <strong>Experience and Expertise:</strong>
-            <p className="body-text">
+            <p>
               With over 15 years of experience serving the tri-state area, we
               bring unparalleled expertise to every project, ensuring quality
               craftsmanship and exceptional results.
@@ -156,7 +156,7 @@ export default function Contact() {
 
           <li>
             <strong>Comprehensive Services:</strong>
-            <p className="body-text">
+            <p>
               We handle everything from installation and refinishing to repairs
               and cleaning, providing a one-stop shop for all your flooring
               needs.
@@ -165,7 +165,7 @@ export default function Contact() {
 
           <li>
             <strong>Quality Materials:</strong>
-            <p className="body-text">
+            <p>
               We use only premium materials from trusted suppliers, guaranteeing
               the durability and longevity of your new floors.
             </p>
@@ -173,7 +173,7 @@ export default function Contact() {
 
           <li>
             <strong>Customer Satisfaction:</strong>
-            <p className="body-text">
+            <p>
               Our commitment to your satisfaction is unwavering. We listen to
               your needs, provide personalized solutions, and strive to exceed
               your expectations at every step.
@@ -181,7 +181,7 @@ export default function Contact() {
           </li>
         </ul>
 
-        <p className="body-text">
+        <p>
           <strong>
             Do not hesitate to reach out! Let CH Hardwood Floors transform your
             house into the home of your dreams, one beautiful floor at a time.

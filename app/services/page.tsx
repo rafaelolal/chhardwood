@@ -56,10 +56,12 @@ export default function Services() {
 
   return (
     <>
-      <PageHeading
-        title="Premium Flooring Services"
-        subtitle="Ways to Transform Your Home"
-      />
+      <section>
+        <PageHeading
+          title="Premium Flooring Services"
+          subtitle="Ways to Transform Your Home"
+        />
+      </section>
 
       <section className="container-fluid">
         <div className="row g-5 justify-content-center mt-3">
@@ -70,7 +72,7 @@ export default function Services() {
       <section className="container-fluid my-5">
         <h2 className="fs-5">Description of Services</h2>
 
-        <p className="body-text">
+        <p>
           Transform your home with our expert flooring installation and
           refinishing services. We offer a comprehensive range of solutions,
           including installation, sanding, staining, finishing, and repairs for
@@ -85,37 +87,32 @@ export default function Services() {
         <h3 className="fs-6">Installation:</h3>
 
         <ul>
-          <li className="body-text">
+          <li>
             <strong>Hardwood:</strong> Enhance the elegance and value of your
             home with beautiful hardwood flooring. We install a variety of
             hardwood species, ensuring a perfect fit for your style and budget.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Vinyl:</strong> Enjoy the versatility and durability of
             vinyl flooring. We offer a wide selection of colors and patterns to
             complement any décor.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Laminate:</strong> Achieve the look of hardwood or stone at
             a fraction of the cost with laminate flooring. We provide expert
             installation for a seamless and long-lasting finish.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Carpet:</strong> Add warmth and comfort to your space with
             plush carpeting. We offer various carpet styles and materials to
             suit your needs and preferences.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Cork:</strong> Embrace the eco-friendly and sound-absorbing
             qualities of cork flooring. Our team ensures precise installation
             for a unique and sustainable flooring solution.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Stairs & Railings:</strong> Elevate the functionality and
             aesthetics of your staircase with our expert installation and
             refinishing services for both steps and railings.
@@ -123,8 +120,7 @@ export default function Services() {
         </ul>
 
         <h3 className="fs-6">Sanding, Staining & Finishing:</h3>
-
-        <p className="body-text">
+        <p>
           Revitalize your existing hardwood floors, stairs, and railings with
           our professional sanding, staining, and finishing services. We use
           dustless equipment to minimize mess and ensure a smooth, flawless
@@ -133,16 +129,14 @@ export default function Services() {
         </p>
 
         <h3 className="fs-6">Repairs:</h3>
-
-        <p className="body-text">
+        <p>
           Do not let damaged floors detract from the beauty of your home. We
           offer comprehensive repair solutions for all types of flooring,
           restoring its functionality and appearance.
         </p>
 
         <h3 className="fs-6">House Cleaning:</h3>
-
-        <p className="body-text">
+        <p>
           Enjoy a sparkling clean home with our professional house cleaning
           services. We provide thorough and efficient cleaning, leaving your
           space fresh and inviting.
@@ -150,7 +144,7 @@ export default function Services() {
 
         <h2 className="fs-5">Your Project in Expert Hands</h2>
 
-        <p className="body-text">
+        <p>
           With over 15 years of experience, our team possesses the knowledge and
           expertise to handle projects of all sizes, from residential to
           commercial and construction. We prioritize quality craftsmanship and
@@ -161,31 +155,29 @@ export default function Services() {
         <h3 className="fs-6">Benefits of Choosing Us:</h3>
 
         <ul>
-          <li className="body-text">
+          <li>
             <strong>Mobile Showroom:</strong> We bring the showroom to you!
             Explore a wide variety of flooring samples in the comfort of your
             own home, allowing you to visualize how different options will
             complement your existing décor and furniture.
           </li>
-          <li className="body-text">
+          <li>
             <strong>Quality Materials:</strong> We source premium materials from
             trusted suppliers, guaranteeing durability and longevity for your
             flooring investment.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Dustless Service Available:</strong> Minimize disruption and
             mess with our dustless sanding and refinishing services.
           </li>
-
-          <li className="body-text">
+          <li>
             <strong>Comprehensive Solutions:</strong> From installation to
             repairs and cleaning, we offer a complete range of services to meet
             all your flooring needs.
           </li>
         </ul>
 
-        <p className="body-text">
+        <p>
           <strong>
             Contact us today for a free consultation and let us bring your
             flooring vision to life!
