@@ -10,7 +10,6 @@
 main {
   background-color: white;
   min-height: 100vh;
-
 }
 
 .body-text {
@@ -18,7 +17,6 @@ main {
   font-weight: 400;
   font-style: normal;
 }
-
 
 .wood-bg-2 {
   background-image: url("/chhardwood/images/old-wooden-textures.jpg");
@@ -91,17 +89,18 @@ main {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  // width: 150px;
+  // height: 150px;
   filter: saturate(60%);
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 90px;
-    height: 90px;
-  }
-}
+// @media (max-width: 576px) {
+//   .logo {
+//     width: 90px;
+//     height: 90px;
+//   }
+// }
+
 .fs-7 {
   font-size: 0.8rem;
 }
@@ -129,20 +128,17 @@ main {
   outline: none;
 }
 
-
 .toggler-icon {
   width: 30px;
   height: 3.5px;
   background-color: $light;
   display: block;
   transition: all 0.2s;
-
 }
 
 .middle-bar {
   margin: 7px auto;
 }
-
 
 .bar {
   margin: auto;
@@ -158,36 +154,33 @@ main {
   border-radius: 0;
   padding: 0;
   font-size: 1rem;
-}    
+}
 
-.btn-close{
+.btn-close {
   --bs-btn-close-bg: none;
 }
 
-
-.contact-box{
+.contact-box {
   min-width: 250px;
   height: 50px;
   background-color: $light;
   padding: 0.5rem;
   margin: 0.8rem auto 0.8rem auto;
   display: flex;
-  
 }
 
-.contact-box svg{
+.contact-box svg {
   margin: auto 1rem auto;
   fill: $primary;
 }
 
-.contact-box p{
+.contact-box p {
   font-size: 0.8rem;
   color: $primary;
   margin-top: auto;
   margin-bottom: auto;
   height: fit-content;
 }
-
 
 .triangle-with-partial-borders {
   border: 4px solid $secondary;
@@ -199,10 +192,10 @@ main {
 .triangle-with-partial-borders:after {
   content: "";
   display: block;
-  height: 0; 
+  height: 0;
   left: 50%;
   position: absolute;
-  width: 0; 
+  width: 0;
 }
 .triangle-with-partial-borders:before {
   border-left: 8px solid transparent;
