@@ -58,7 +58,7 @@ export default function Home() {
 
             <Link
               className="mx-2"
-              href="https://www.facebook.com/CH Floorsfloors"
+              href="https://www.facebook.com/chhardwoodfloors"
             >
               <FacebookIcon className="fs-1" />
             </Link>
@@ -100,8 +100,8 @@ export default function Home() {
 
               <div className="d-sm-none my-5">
                 <Image
-                  src="/images/paint.jpg"
-                  alt="Paint Bucket"
+                  src="/images/side-picture-of-van.jpeg"
+                  alt="Side view picture of the CH Floors van"
                   width={300}
                   height={300}
                   style={{ objectFit: "cover" }}
