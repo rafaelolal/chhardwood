@@ -9,9 +9,9 @@ import QuickModal from "./ui/quick-modal";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "CH Hardwood Floors",
+  title: "CH Floors",
   description:
-    "CH Hardwood Floors is a flooring company in the Tri-State Area.",
+    "CH Floors is a flooring company in the New Jersey and broader area.",
   keywords:
     "flooring, hardwood, wood, floors, installation, refinishing, sanding, repair, Tri-State Area, New York, Pennsylvania, South Jersey",
 };
@@ -23,21 +23,21 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Script src="/chhardwood/bootstrap.bundle.min.js" />
-
-      <Head>
-        <link rel="icon" href="/chhardwood/favicon.ico" key="favicon" />
-      </Head>
+      <head>
+        <link rel="icon" href="/favicon.ico" key="favicon" />
+      </head>
 
       <html lang="en">
         <body className={`${inter.variable} ${krona_one.variable}`}>
           <Navbar />
 
-          <main>{children}</main>
+          <QuickModal />
 
-          {/* <QuickModal />*/}
+          {children}
 
           <Footer />
+
+          <Script src="/bootstrap.bundle.min.js" strategy="beforeInteractive" />
         </body>
       </html>
     </>

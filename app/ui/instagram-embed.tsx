@@ -3,11 +3,6 @@ import Script from "next/script";
 export function InstagramEmbed() {
   return (
     <>
-      <Script
-        src="https://www.instagram.com/embed.js"
-        strategy="afterInteractive"
-      />
-
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/ch_hardwoodfloors/?utm_source=ig_embed&utm_campaign=loading"
@@ -276,7 +271,7 @@ export function InstagramEmbed() {
               target="_blank"
               rel="noopener noreferrer" // Add rel attribute for security
             >
-              CH Hardwood Floors
+              CH Floors
             </a>{" "}
             (@
             <a
@@ -298,6 +293,11 @@ export function InstagramEmbed() {
           </p>
         </div>
       </blockquote>
+
+      <Script
+        src="https://www.instagram.com/embed.js"
+        strategy="afterInteractive"
+      />
     </>
   );
 }

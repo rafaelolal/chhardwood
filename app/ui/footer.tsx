@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EMAIL, FACEBOOK, PHONE_NUMBER } from "../lib/constants";
+import { EmailLink } from "./email-link";
+import InstagramIcon from "./instagram-icon";
+import FacebookIcon from "./facebook-icon";
+import PhoneIcon from "./phone-icon";
+import { SmsLink } from "./sms-link";
 
 export default function Footer() {
   return (
@@ -7,13 +13,13 @@ export default function Footer() {
       <div className="bg-primary row  pt-4">
         <div className="col-12 col-md-3 py-3 text-center">
           <Image
-            src="/chhardwood/images/logo.png"
+            src="/images/logo.png"
             width={80}
             height={80}
-            alt="CH HardWood Logo"
+            alt="CH Floors Logo"
           />
 
-          <h2 className="text-light fs-6">CH HardWood</h2>
+          <h2 className="text-light fs-6">CH Floors</h2>
 
           <p className="text-secondary py-1">
             Timeless Elegance Meets Exceptional Craftsmanship
@@ -21,54 +27,15 @@ export default function Footer() {
         </div>
 
         <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
-          <h2 className="text-light fs-6">Navigation</h2>
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/services"
-          >
-            Services
-          </Link>
+          <h2 className="text-light fs-6">Areas of Service</h2>
 
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/gallery"
-          >
-            Gallery
-          </Link>
-
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/messages"
-          >
-            Send Us A Message
-          </Link>
-
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/appointment"
-          >
-            Schedule An Appointmment
-          </Link>
-
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/quote"
-          >
-            Get A Quote
-          </Link>
-
-          <Link
-            className="nav-link text-secondary py-1"
-            aria-current="page"
-            href="/help"
-          >
-            Help
-          </Link>
+          <p className="text-secondary m-1">New Jersey</p>
+          <p className="text-secondary m-1">Anywhere in South Jersey!</p>
+          <p className="text-secondary m-1">Hunterdon County, New Jersey</p>
+          <p className="text-secondary m-1">Morris County, New Jersey</p>
+          <p className="text-secondary m-1">Somerset County, New Jersey</p>
+          <p className="text-secondary m-1">Monmouth, New Jersey</p>
+          <p className="text-secondary m-1">And much more!</p>
         </div>
 
         <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
@@ -77,7 +44,7 @@ export default function Footer() {
           <Link
             className="nav-link text-secondary py-1"
             aria-current="page"
-            href=""
+            href="/services"
           >
             Installing
           </Link>
@@ -85,7 +52,7 @@ export default function Footer() {
           <Link
             className="nav-link text-secondary py-1"
             aria-current="page"
-            href=""
+            href="/services"
           >
             Finishing
           </Link>
@@ -93,7 +60,7 @@ export default function Footer() {
           <Link
             className="nav-link text-secondary py-1"
             aria-current="page"
-            href=""
+            href="/services"
           >
             Cleaning
           </Link>
@@ -101,7 +68,7 @@ export default function Footer() {
           <Link
             className="nav-link text-secondary py-1"
             aria-current="page"
-            href=""
+            href="/services"
           >
             Repairs
           </Link>
@@ -112,9 +79,13 @@ export default function Footer() {
 
           <h3 className="text-tertiary fs-7 pt-2">Inquires</h3>
 
-          <p className="text-secondary">1 (732) 966-4169</p>
+          <SmsLink number={PHONE_NUMBER}>
+            <p className="text-secondary">{PHONE_NUMBER}</p>
+          </SmsLink>
 
-          <p className="text-secondary">chhardwood@hotmail.com</p>
+          <EmailLink email={EMAIL}>
+            <p className="text-secondary">{EMAIL}</p>
+          </EmailLink>
 
           <h3 className="text-tertiary fs-7 py-2">Social Media</h3>
 
@@ -123,39 +94,22 @@ export default function Footer() {
               className="mx-2"
               href="https://www.instagram.com/ch_hardwoodfloors/"
             >
-              <Image
-                src="/chhardwood/icons/instagram.png"
-                width={35}
-                height={35}
-                alt="Instagram"
-              />
+              <InstagramIcon className="text-white fs-1" />
             </Link>
 
-            <Link
-              className="mx-2"
-              href="https://www.facebook.com/chhardwoodfloors"
-            >
-              <Image
-                src="/chhardwood/icons/facebook.png"
-                width={35}
-                height={35}
-                alt="Facebook"
-              />
+            <Link className="mx-2" href={FACEBOOK}>
+              <FacebookIcon className="text-white fs-1" />
             </Link>
 
             <Link className="mx-2" href="/contact">
-              <Image
-                src="/chhardwood/icons/phone-call.png"
-                width={35}
-                height={35}
-                alt="Phone Number"
-              />
+              <PhoneIcon className="text-white fs-1" />
             </Link>
           </div>
         </div>
+
         <div className="col-12 bg-light text-center p-3">
           <small className=" text-primary fs-7 ">
-            ©2023 por CH Hardwood Floors. All rights reserved
+            ©2024 por CH Floors. All rights reserved
           </small>
         </div>
       </div>

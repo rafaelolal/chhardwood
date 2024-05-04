@@ -1,7 +1,8 @@
 @import "./colors";
+@import "~bootstrap-icons/font/bootstrap-icons";
 @import "~bootstrap/scss/bootstrap";
 
-*{
+* {
   font-family: var(--font-inter);
   font-weight: 500;
 }
@@ -9,22 +10,25 @@
 main {
   background-color: white;
   min-height: 100vh;
-
 }
 
-.krona-one{
+.krona-one {
   font-family: var(--font-krona-one);
 }
 
-h1,h2,h3,h4,h6{
+h1,
+h2,
+h3,
+h4,
+h6 {
   font-family: var(--font-krona-one);
 }
 
-h1{
+h1 {
   font-size: 1.5rem;
 }
 
-p{
+p {
   font-size: 1rem;
 }
 
@@ -40,10 +44,8 @@ p{
   font-size: 0.7rem;
 }
 
-
-
 .wood-bg-2 {
-  background-image: url("/chhardwood/images/old-wooden-textures.jpg");
+  background-image: url("/images/old-wooden-textures.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
@@ -52,7 +54,7 @@ p{
 }
 
 .wood-bg {
-  background-image: url("/chhardwood/images/hardwood-floor.jpg");
+  background-image: url("/images/hardwood-floor.jpg");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,8 +184,8 @@ p{
 }
 
 .contact-box {
-  min-width: 250px;
-  height: 50px;
+  max-width: 500px;
+  height: 100%;
   background-color: $light;
   padding: 0.5rem;
   margin: 0.8rem auto 0.8rem auto;

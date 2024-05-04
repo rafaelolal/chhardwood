@@ -1,3 +1,7 @@
 export default function Help() {
-  return <h1>Not Ready!</h1>;
+  return (
+    <main>
+      <h1>Not Ready!</h1>
+    </main>
+  );
 }

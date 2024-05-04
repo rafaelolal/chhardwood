@@ -1,35 +1,76 @@
+import Link from "next/link";
+
 export default function QuickModal() {
+  const quickAccessItems = [
+    {
+      icon: "bi bi-house-door-fill",
+      name: "Book a Visit",
+      link: "/visit",
+    },
+    {
+      icon: "bi bi-person-fill",
+      name: "Message Us",
+      link: "/message",
+    },
+    {
+      icon: "bi bi-currency-dollar",
+      name: "Get a Quote",
+      link: "/quote",
+    },
+    {
+      icon: "bi bi-telephone-fill",
+      name: "Call",
+      link: "/contact",
+    },
+    {
+      icon: "bi bi-chat-fill",
+      name: "SMS",
+      link: "/contact",
+    },
+  ];
+
   return (
     <>
-      <button
-        type="button"
-        className="btn btn-secondary fixed-bottom m-2"
-        data-bs-toggle="modal"
-        data-bs-target="#contactModal"
-      >
-        Click Here
-      </button>
+      <i
+        className="bi bi-info-circle-fill text-tertiary fs-1 fixed-bottom m-2"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#quickOffCanvas"
+        aria-controls="quickOffCanvas"
+      ></i>
 
       <div
-        className="modal fade"
-        id="contactModal"
+        className="offcanvas offcanvas-bottom"
+        style={{ width: "60%", height: "50%", maxWidth: "300px" }}
         tabIndex={-1}
-        aria-labelledby="contactModalLabel"
-        aria-hidden="true"
+        id="quickOffCanvas"
+        aria-labelledby="quickOffCanvasLabel"
       >
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-body">Quick access info and icons</div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
+        {/* <div className="offcanvas-header">
+          <h5 className="offcanvas-title" id="quickOffCanvasLabel">
+            Quick Menu
+          </h5>
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div> */}
+
+        <div className="offcanvas-body small">
+          {quickAccessItems.map((item, index) => (
+            <div
+              className="d-flex"
+              key={index}
+              data-bs-toggle="offcanvas"
+              data-bs-target="#quickOffCanvas"
+            >
+              <i className={`${item.icon} text-secondary fs-1 me-3`}></i>
+              <Link className="nav-link my-auto" href={item.link}>
+                {item.name}
+              </Link>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

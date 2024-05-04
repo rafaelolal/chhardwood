@@ -8,7 +8,7 @@ type ServiceProps = {
 export default function Service({ service }: ServiceProps) {
   return (
     <div className="col-auto">
-      <div className="card" style={{ width: "17rem" }}>
+      <div className="card h-100" style={{ width: "17rem" }}>
         <div
           className="card-img-top position-relative"
           style={{ height: 200, width: "100%" }}

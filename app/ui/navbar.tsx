@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand krona-one text-light pt-2" href="/">
-          CH HardWood
+          CH Floors
         </Link>
 
         <button
@@ -33,7 +33,7 @@ export default function Navbar() {
               className="offcanvas-title text-light navbar-brand pt-2"
               id="offcanvasNavbarLabel"
             >
-              CH HardWood
+              CH Floors
             </h1>
 
             <button
@@ -129,10 +129,10 @@ export default function Navbar() {
             </ul>
             <div className="mx-auto mb-3">
               <Image
-                src="/chhardwood/images/logo.png"
+                src="/images/logo.png"
                 width={85}
                 height={85}
-                alt="CH Hardwood Floors Logo"
+                alt="CH Floors Logo"
               />
             </div>
           </div>
