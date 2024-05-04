@@ -55,14 +55,14 @@ export default function Gallery() {
       />
 
       <main>
-        <section className="px-3 px-md-5 pt-3 pb-5">
+        <section className="px-3 px-md-5 my-4">
           <ImageList
             className="row g-3 g-lg-4 row-cols-2 row-cols-sm-3 row-cols-md-4"
             images={images}
           />
         </section>
 
-        <section className="container my-5 d-flex flex-column align-items-center">
+        <section className="container mt-3 mb-5 d-flex flex-column align-items-center">
           <InstagramEmbed />
         </section>
       </main>

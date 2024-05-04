@@ -49,36 +49,36 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
-  box-shadow: inset 0 0 0 1000px rgba(220, 189, 168, 0.74);
+  box-shadow: inset 0 0 0 1000px rgba(189, 169, 156, 0.75);
   width: 100%;
 }
 
 .wood-bg {
-  background-image: url("/images/hardwood-floor.jpg");
+  background-image: url("/images/wood.jpg");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
-  box-shadow: inset 0 0 0 1000px rgba(70, 35, 13, 0.84);
+  box-shadow: inset 0 0 0 1000px rgba(194, 183, 176, 0.48);
 }
 
 .btn {
   padding: 0.4rem 1.1rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   max-width: fit-content;
-  border-radius: 0;
-  border-radius: 20px;
+  border-radius: 2px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-secondary {
-  color: $light;
+  color: $dark;
   background-color: $secondary;
   border-color: $secondary;
 }
 
 .btn-tertiary {
-  color: $light;
+  font-weight: 500;
+  color: $dark;
   background-color: $tertiary;
   border-color: $tertiary;
 }
@@ -113,11 +113,6 @@ p {
   color: $light;
 }
 
-.logo {
-  // width: 150px;
-  // height: 150px;
-  filter: saturate(60%);
-}
 
 // @media (max-width: 576px) {
 //   .logo {
@@ -156,7 +151,7 @@ p {
 .toggler-icon {
   width: 30px;
   height: 3.5px;
-  background-color: $light;
+  background-color: $white;
   display: block;
 }
 
@@ -168,7 +163,7 @@ p {
   margin: auto;
   height: 3px;
   width: 65px;
-  background-color: $light;
+  background-color: $dark;
 }
 
 .input-box {
@@ -190,6 +185,7 @@ p {
   padding: 0.5rem;
   margin: 0.8rem auto 0.8rem auto;
   display: flex;
+  text-align: center;
 }
 
 .contact-box svg {
@@ -198,9 +194,17 @@ p {
 }
 
 .contact-box p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: $primary;
   margin-top: auto;
   margin-bottom: auto;
   height: fit-content;
+}
+
+
+.icon{
+  padding: 8px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }

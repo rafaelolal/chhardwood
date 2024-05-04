@@ -5,11 +5,9 @@ type PageHeadingProps = {
 
 export function PageHeading({ title, subtitle }: PageHeadingProps) {
   return (
-    <header className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-top border-light border-3">
-      <h1 className="fs-4 text-center text-light m-0 p-0">{title}</h1>
-      <h2 className="body-text fs-6 text-center m-0 mb-2 text-secondary">
-        {subtitle}
-      </h2>
+    <header className="row w-100 m-0 py-5 wood-bg-2 border-bottom border-light border-5">
+      <h1 className="text-center text-dark m-0 fs-4">{title}</h1>
+      <h2 className=" fs-7 text-center text-quaternary m-0 mb-2">{subtitle}</h2>
       <div className="bar" />
     </header>
   );
