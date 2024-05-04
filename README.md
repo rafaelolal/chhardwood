@@ -4,12 +4,9 @@
 
 ### DJ
 
-MAIN THING TO DO
-
-- [ ] design reviews page, review form, and a few reviews for the home page, just drawing
-
 OTHERS
 
+- [ ] make each service link to the writing
 - [ ] take inspiration from this site https://www.gilberthardwoodnj.com
 - [ ] fix strong tags (it is good to use them because of SEO, research html tags relevant to SEO, there are some listed below)
 - [ ] style the writing sections of pages. Only style the ones you are dead set are good
@@ -18,8 +15,6 @@ OTHERS
       Our home page should stay as simple as it is and not be as crazy as the site above, but maybe add some AI generated advertising text on "why us", "who are we" "where do we work" (but not as a narrative like Rafael did), "reviews",
 - [ ] add the logos of actual hardwood, COREtec, carpet... flooring companies. Let Rafael know if you need help on how and where
 - [ ] make the services page have more personality since there are only 4 services
-
-- [ ] modal button is invisible. Probably has to do with overriding it in the CSS
 
 ### Rafael
 
@@ -53,7 +48,7 @@ Marketing?
 - [ ] as many meta tags as possible for every page
 - [ ] check over alt text for each image, make sure it is good
 - [ ] fix strong tags or preferably use fw-bold. Note for DJ: try to do things in aa way where they affect things globally. For example, the body-text class is not affecting how the strong tag comes out or how the fw-_ classes work. Also, instead of using fs-_ all the time, just change the size of h1 tags by default.
-- [ ] home page section 2 looks strange, the about us section, it just feels off centered somehow
+
 - [ ] make use of semantic tags and tags important for SEO: If something is a section, use section and not div, if something is a footer...and so on semantic tags include:
       "article",
       "aside",

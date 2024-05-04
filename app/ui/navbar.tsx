@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar bg-dark">
+    <nav className="navbar bg-primary">
       <div className="container-fluid">
-        <Link className="navbar-brand krona-one text-light pt-2" href="/">
+        <Link className="navbar-brand krona-one text-white py-2" href="/">
           CH Floors
         </Link>
 
@@ -28,16 +28,16 @@ export default function Navbar() {
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div className="offcanvas-header bg-primary m-0 py-3 border-bottom border-4">
+          <div className="offcanvas-header bg-light py-2 border-2 border-dark">
             <h1
-              className="offcanvas-title text-light navbar-brand pt-2"
+              className="offcanvas-title navbar-brand py-2"
               id="offcanvasNavbarLabel"
             >
               CH Floors
             </h1>
 
             <button
-              className="navbar-toggler text-light fs-2 ms-auto krona-one"
+              className="navbar-toggler fs-2 ms-auto krona-one text-dark"
               type="button"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -47,13 +47,13 @@ export default function Navbar() {
           </div>
 
           <div
-            className="offcanvas-body bg-primary navbar-text d-flex flex-column p-2 "
+            className="offcanvas-body bg-light navbar-text d-flex flex-column p-2 "
             style={{ height: "fit-content" }}
           >
-            <ul className="navbar-nav justify-content-start pt-5 flex-grow-1">
-              <li className="nav-item text-light" data-bs-dismiss="offcanvas">
+            <ul className="navbar-nav justify-content-start pt-5 flex-grow-1 fs-6">
+              <li className="nav-item text-dark" data-bs-dismiss="offcanvas">
                 <Link
-                  className="nav-link active text-light"
+                  className="nav-link active text-dark fw-semibold"
                   aria-current="page"
                   href="/"
                 >
@@ -63,7 +63,7 @@ export default function Navbar() {
 
               <li className="nav-item " data-bs-dismiss="offcanvas">
                 <Link
-                  className="nav-link active text-light"
+                  className="nav-link active text-dark fw-semibold"
                   aria-current="page"
                   href="/services"
                 >
@@ -73,7 +73,7 @@ export default function Navbar() {
 
               <li className="nav-item" data-bs-dismiss="offcanvas">
                 <Link
-                  className="nav-link active text-light"
+                  className="nav-link active text-dark fw-semibold"
                   aria-current="page"
                   href="/gallery"
                 >
@@ -83,7 +83,7 @@ export default function Navbar() {
 
               <li className="nav-item" data-bs-dismiss="offcanvas">
                 <Link
-                  className="nav-link active text-light"
+                  className="nav-link active text-dark fw-semibold"
                   aria-current="page"
                   href="/contact"
                 >
@@ -93,7 +93,7 @@ export default function Navbar() {
 
               {/* <li className="nav-item " data-bs-dismiss="offcanvas">
                 <Link
-                  className="nav-link active text-light"
+                  className="nav-link active text-dark"
                   aria-current="page"
                   href="/help"
                 >
@@ -104,7 +104,7 @@ export default function Navbar() {
               {/* <li>
                 <div className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle text-light"
+                    className="nav-link dropdown-toggle text-dark"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -130,8 +130,9 @@ export default function Navbar() {
             <div className="mx-auto mb-3">
               <Image
                 src="/images/logo.png"
-                width={85}
-                height={85}
+                style={{ filter: "saturate(60%)" }}
+                width={100}
+                height={100}
                 alt="CH Floors Logo"
               />
             </div>
