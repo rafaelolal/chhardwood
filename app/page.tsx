@@ -73,7 +73,7 @@ export default function Home() {
       <main>
         <section className="container-fluid bg-light py-5 text-center">
           <div className="row">
-            <div className="col-6 d-none d-sm-block my-auto">
+            <div className="col-12 col-sm-6 d-none d-sm-block my-auto">
               <Image
                 src="/images/test.jpg"
                 height={400}
@@ -82,7 +82,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <h1 className="text-primary text-sm-left">
                 About Us <span className=" fw-bold">|</span>
               </h1>
