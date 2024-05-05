@@ -40,7 +40,7 @@ export default function Services() {
       },
       name: "Cleaning",
       description:
-        "Cleaning of commercial, residential, and construction sites",
+        "Any type of cleaning of commercial, residential, and construction sites",
       link: "/services/cleaning",
     },
     {
@@ -94,7 +94,10 @@ export default function Services() {
         </section>
 
         <section className="container-fluid my-5">
-          <h2 className="fs-4 text-center">Description of Services</h2>
+          <h2 className="fs-4 text-center">
+            Description of Services{" "}
+            <span className="text-tertiary fw-bold">|</span>
+          </h2>
 
           <p>
             Transform your home with our expert flooring installation and
@@ -171,7 +174,8 @@ export default function Services() {
           </p>
 
           <h2 className="fs-5 text-center mt-5">
-            Your Project is in Expert Hands
+            Your Project is in Expert Hands{" "}
+            <span className="text-tertiary fw-bold">|</span>
           </h2>
 
           <p>

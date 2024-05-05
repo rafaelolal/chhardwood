@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className="col-12 col-sm-6">
               <h1 className="text-primary text-sm-left">
-                About Us <span className=" fw-bold">|</span>
+                About Us <span className="text-tertiary fw-bold">|</span>
               </h1>
 
               <p className="text-sm-left px-3">
@@ -145,16 +145,21 @@ export default function Home() {
               IMPORTANT
             </h3>
 
-            <Link href="/gallery" className="btn btn-tertiary mx-auto mt-3">
-              View Our Work
-            </Link>
+            <div className="mx-auto mt-3">
+              <Link
+                href="https://g.page/r/Cbs6GDoU0NDIEB0/review"
+                className="btn btn-tertiary me-3"
+              >
+                Reviews
+              </Link>
 
-            <Link
-              href="/contact"
-              className="btn btn-danger mx-auto mt-3 fw-bold jumping text-black"
-            >
-              Get Free Quote
-            </Link>
+              <Link
+                href="/contact"
+                className="btn btn-danger fw-bold jumping text-black"
+              >
+                Get Free Quote
+              </Link>
+            </div>
           </div>
         </section>
 
