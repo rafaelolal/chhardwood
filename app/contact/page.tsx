@@ -25,7 +25,6 @@ export default function Contact() {
   const pages: PageType[] = [
     { name: "Book a Visit", link: "/visit" },
     { name: "Message Us", link: "/message" },
-    { name: "Get a Quote", link: "/quote" },
   ];
 
   return (
@@ -46,6 +45,13 @@ export default function Contact() {
               {page.name}
             </Link>
           ))}
+
+          <Link
+            href="/quote"
+            className="btn btn-danger fw-bold jumping text-black d-block mx-auto my-4"
+          >
+            Free Quote
+          </Link>
 
           <h2 className="fs-7 text-primary mt-4 pt-4 mb-4 text-center">
             Additional Questions?
