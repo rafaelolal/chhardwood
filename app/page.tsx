@@ -5,6 +5,7 @@ import CheckIcon from "./ui/check-icon";
 import InstagramIcon from "./ui/instagram-icon";
 import FacebookIcon from "./ui/facebook-icon";
 import PhoneIcon from "./ui/phone-icon";
+import { FACEBOOK, INSTAGRAM } from "./lib/constants";
 
 export const metadata: Metadata = {
   title: "CH Floors",
@@ -54,17 +55,11 @@ export default function Home() {
           </Link>
 
           <div className="py-4">
-            <Link
-              className="mx-2"
-              href="https://www.instagram.com/ch_hardwoodfloors/"
-            >
+            <Link className="mx-2" href={INSTAGRAM}>
               <InstagramIcon className="fs-1" />
             </Link>
 
-            <Link
-              className="mx-2"
-              href="https://www.facebook.com/CH Floorsfloors"
-            >
+            <Link className="mx-2" href={FACEBOOK}>
               <FacebookIcon className="fs-1" />
             </Link>
 

@@ -14,7 +14,6 @@ OTHERS
       Do a drawing first and then we code
       Our home page should stay as simple as it is and not be as crazy as the site above, but maybe add some AI generated advertising text on "why us", "who are we" "where do we work" (but not as a narrative like Rafael did), "reviews",
 - [ ] add the logos of actual hardwood, COREtec, carpet... flooring companies. Let Rafael know if you need help on how and where
-- [ ] make the services page have more personality since there are only 4 services
 
 ### Rafael
 
@@ -36,9 +35,7 @@ Google analytics?
 SEO?
 Marketing?
 
-## Secondary TODOs
-
-# Later Ideas
+## Later Ideas
 
 - [ ] add google address auto complete
 - [ ] add review writing, viewing
@@ -92,7 +89,7 @@ Execute
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 

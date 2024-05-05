@@ -30,10 +30,9 @@ export default function Footer() {
         <div className="col-12 col-sm-4 col-md-3 p-3 text-center text-md-start">
           <h2 className="fs-6 fw-semibold">Areas of Service</h2>
           <p className="my-1">New Jersey</p>
-          <p className="my-1">Hunterdon County, New Jersey</p>
-          <p className="my-1">Morris County, New Jersey</p>
-          <p className="my-1">Somerset County, New Jersey</p>
-          <p className="my-1">Monmouth, New Jersey</p>
+          <p className="my-1">South New Jersey</p>
+          <p className="my-1">Pennsylvania</p>
+          <p className="my-1">New York</p>
           <p className="my-1">And much more!</p>
         </div>
 
