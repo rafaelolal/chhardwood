@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ServiceList from "../ui/service-list";
 import { PageHeading } from "../ui/page-heading";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Services | CH Floors",
@@ -76,6 +77,20 @@ export default function Services() {
           <div className="row gy-5 justify-content-center mt-3">
             <ServiceList services={services} />
           </div>
+
+          <Link
+            href="/gallery"
+            className="btn btn-tertiary mx-auto d-block mt-5 text-black"
+          >
+            See Work Gallery
+          </Link>
+
+          <Link
+            href="/contact"
+            className="btn btn-danger mx-auto d-block mt-5 fw-bold jumping text-black"
+          >
+            Get Free Quote
+          </Link>
         </section>
 
         <section className="container-fluid my-5">
