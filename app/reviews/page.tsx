@@ -5,3 +5,5 @@ export default function Reviews() {
     </main>
   );
 }
+
+// https://g.page/r/Cbs6GDoU0NDIEB0/review

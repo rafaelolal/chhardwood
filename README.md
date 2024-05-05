@@ -40,8 +40,17 @@ Marketing?
 
 # Later Ideas
 
-- [ ] convert pngs to jpgs
+- [ ] add google address auto complete
+- [ ] add review writing, viewing
+- [ ] improve gallery page by adding categories
+- [ ] connect services to gallery page
+- [ ] add blog pages
+- [ ] FAQs
+- [ ] more interlinking within the pages
 - [ ] Add page translation
+- [ ] facebook and twitter sharing
+
+- [ ] convert pngs to jpgs
 - [ ] 1 h1 heading per page
 - [ ] ~2 h2 headings per page
 - [ ] ~500 words of content in p tags per page

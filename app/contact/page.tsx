@@ -7,6 +7,7 @@ import { EmailLink } from "../ui/email-link";
 import PhoneIcon from "../ui/phone-icon";
 import EmailIcon from "../ui/email-icon";
 import { SmsLink } from "../ui/sms-link";
+import ReviewIcon from "../ui/review-icon";
 
 export const metadata: Metadata = {
   title: "Contact Us | CH Floors",
@@ -80,10 +81,20 @@ export default function Contact() {
               <p>{EMAIL}</p>
             </div>
           </EmailLink>
+
+          <Link href="https://g.page/r/Cbs6GDoU0NDIEB0/review">
+            <div className="contact-box">
+              <ReviewIcon className="fs-1 mx-3" />
+
+              <p>Reviews</p>
+            </div>
+          </Link>
         </section>
 
         <section className="container my-5">
-          <h2 className="fs-4 text-center mt-5">Contacting Us</h2>
+          <h2 className="fs-4 text-center mt-5">
+            Contacting Us <span className="text-tertiary fw-bold">|</span>
+          </h2>
 
           <p>
             CH Floors is dedicated to making your dream floors a reality, and we
@@ -149,7 +160,10 @@ export default function Contact() {
             </li>
           </ul>
 
-          <h2 className="fs-5">Why Choose CH Floors?</h2>
+          <h2 className="fs-5">
+            Why Choose CH Floors?{" "}
+            <span className="text-tertiary fw-bold">|</span>
+          </h2>
 
           <ul>
             <li>

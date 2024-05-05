@@ -27,6 +27,11 @@ export default function QuickModal() {
       name: "SMS",
       link: "/contact",
     },
+    {
+      icon: "bi bi-star-fill",
+      name: "Reviews",
+      link: "https://g.page/r/Cbs6GDoU0NDIEB0/review",
+    },
   ];
 
   return (
