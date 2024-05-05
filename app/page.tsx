@@ -22,7 +22,7 @@ export default function Home() {
         style={{ height: "fit-content" }}
       >
         <div className="container py-5 text-center">
-          <div className="logo mx-auto">
+          <div className="mx-auto">
             <Image
               src="/images/logo.png"
               width={150}
@@ -46,8 +46,11 @@ export default function Home() {
             Our Services
           </Link>
 
-          <Link href="/contact" className="btn btn-tertiary m-2">
-            Contact Us
+          <Link
+            href="/contact"
+            className="btn btn-danger m-2 fw-bold jumping text-black"
+          >
+            Get Free Quote
           </Link>
 
           <div className="py-4">
@@ -102,8 +105,8 @@ export default function Home() {
 
               <div className="d-sm-none my-5">
                 <Image
-                  src="/images/paint.jpg"
-                  alt="Paint Bucket"
+                  src="/images/side-mobile-showroom.jpeg"
+                  alt="Side view of the mobile showroom van."
                   width={300}
                   height={300}
                   style={{ objectFit: "cover" }}
@@ -144,6 +147,13 @@ export default function Home() {
 
             <Link href="/gallery" className="btn btn-tertiary mx-auto mt-3">
               View Our Work
+            </Link>
+
+            <Link
+              href="/contact"
+              className="btn btn-danger mx-auto mt-3 fw-bold jumping text-black"
+            >
+              Get Free Quote
             </Link>
           </div>
         </section>

@@ -2,6 +2,8 @@ import ImageList from "../ui/image-list";
 import { Metadata } from "next";
 import { InstagramEmbed } from "../ui/instagram-embed";
 import { PageHeading } from "../ui/page-heading";
+import path from "path";
+import { promises as fs } from "fs";
 
 export const metadata: Metadata = {
   title: "Gallery | CH Floors",
@@ -11,7 +13,10 @@ export const metadata: Metadata = {
     "flooring, hardwood, wood, floors, installation, refinishing, sanding, repair, Tri-State Area, New York, Pennsylvania, South Jersey, gallery, images, photos, installations, refinishing, sanding, repair, services",
 };
 
-export default function Gallery() {
+export default async function Gallery() {
+  const imageDirectory = path.join(process.cwd(), "/public/images/gallery");
+  const imageFilenames = await fs.readdir(imageDirectory);
+
   const images: ImageType[] = [
     {
       alt: "Demonstration of cleaning services.",
@@ -55,15 +60,18 @@ export default function Gallery() {
       />
 
       <main>
+        <section className="container mt-3 mb-5 d-flex flex-column align-items-center">
+          <InstagramEmbed />
+        </section>
+
         <section className="px-3 px-md-5 my-4">
           <ImageList
             className="row g-3 g-lg-4 row-cols-2 row-cols-sm-3 row-cols-md-4"
-            images={images}
+            images={imageFilenames.map((filename) => ({
+              link: `/images/gallery/${filename}`,
+              alt: "Gallery image.",
+            }))}
           />
-        </section>
-
-        <section className="container mt-3 mb-5 d-flex flex-column align-items-center">
-          <InstagramEmbed />
         </section>
       </main>
     </>

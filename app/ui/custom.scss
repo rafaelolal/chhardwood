@@ -2,6 +2,22 @@
 @import "~bootstrap-icons/font/bootstrap-icons";
 @import "~bootstrap/scss/bootstrap";
 
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jumping {
+  animation: move-up-down 1s infinite;
+}
+
 * {
   font-family: var(--font-inter);
   font-weight: 500;
@@ -113,14 +129,6 @@ p {
   color: $light;
 }
 
-
-// @media (max-width: 576px) {
-//   .logo {
-//     width: 90px;
-//     height: 90px;
-//   }
-// }
-
 .fs-7 {
   font-size: 0.8rem;
 }
@@ -201,8 +209,7 @@ p {
   height: fit-content;
 }
 
-
-.icon{
+.icon {
   padding: 8px;
   border-radius: 50%;
   width: 35px;
