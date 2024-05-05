@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <section
+      <header
         className="wood-bg pt-2 border-bottom border-light border-5"
         style={{ height: "fit-content" }}
       >
@@ -73,7 +73,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </header>
 
       <main>
         <section className="container-fluid py-5 text-center">
