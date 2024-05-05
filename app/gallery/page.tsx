@@ -4,6 +4,7 @@ import { InstagramEmbed } from "../ui/instagram-embed";
 import { PageHeading } from "../ui/page-heading";
 import path from "path";
 import { promises as fs } from "fs";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gallery | CH Floors",
@@ -62,6 +63,13 @@ export default async function Gallery() {
       <main>
         <section className="container mt-3 mb-5 d-flex flex-column align-items-center">
           <InstagramEmbed />
+
+          <Link
+            href="/services"
+            className="btn btn-tertiary mx-auto d-block mt-5 text-black"
+          >
+            See Services
+          </Link>
         </section>
 
         <section className="px-3 px-md-5 my-4">
