@@ -3,12 +3,19 @@
 import { clsx } from "clsx";
 import { useState } from "react";
 import { emailHandleSubmit } from "../lib/sendEmail";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export default function MessageForm() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <form onSubmit={() => setSubmitted(true)} action={emailHandleSubmit}>
+    <form
+      onSubmit={() => {
+        setSubmitted(true);
+        sendGTMEvent({ event: "message_sent" });
+      }}
+      action={emailHandleSubmit}
+    >
       <div className="row py-4">
         <div className="col-9 d-flex flex-column mx-auto">
           <div className="mb-3">
