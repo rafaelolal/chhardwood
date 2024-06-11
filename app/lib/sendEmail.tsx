@@ -7,8 +7,6 @@ export async function emailHandleSubmit(formData: FormData) {
   const subject = formData.get("subjectInput");
   const message = formData.get("contentInput");
 
-  console.log(name, email, subject, message);
-
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -19,8 +17,9 @@ export async function emailHandleSubmit(formData: FormData) {
 
   await transporter.sendMail({
     from: process.env.EMAIL_USERNAME,
-    to: email as string,
-    subject: `New message from ${name}: ${subject}`,
-    text: message as string,
+    to: "contactchfloors@gmail.com",
+    subject: `${subject}`,
+    text: `Email: ${email}\nName: ${name} \n\n ${message}`,
+    replyTo: `${email}`,
   });
 }

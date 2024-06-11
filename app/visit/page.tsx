@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { PageHeading } from "../ui/page-heading";
+import GoogleCalendar from "../ui/google-calendar";
 
 export const metadata: Metadata = {
   title: "Book a Visit | CH Floors",
@@ -18,13 +19,7 @@ export default function Visit() {
       />
 
       <main style={{ minHeight: "100%" }}>
-        <iframe
-          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vQ9u_NEcXIsqQeXYDMjKeSqgkD7m9h9-CO46vNHePC6T1GQILM1dUu2aDQHlRfOFK4e4NLI4I?gv=true"
-          style={{ border: 0 }}
-          width="100%"
-          height="600"
-          frameBorder="0"
-        ></iframe>
+        <GoogleCalendar />
       </main>
 
       {/* <iframe

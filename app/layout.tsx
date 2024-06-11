@@ -6,7 +6,7 @@ import Navbar from "./ui/navbar";
 import Script from "next/script";
 import Footer from "./ui/footer";
 import QuickModal from "./ui/quick-modal";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "CH Floors",
@@ -40,7 +40,8 @@ export default function RootLayout({
           <Script src="/bootstrap.bundle.min.js" strategy="beforeInteractive" />
         </body>
 
-        <GoogleAnalytics gaId={process.env.GOOGLE_TAG_MANAGER_ID!} />
+        <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID_2!} />
+        {/* <GoogleAnalytics gaId={process.env.GOOGLE_TAG_MANAGER_ID!} /> */}
       </html>
     </>
   );
