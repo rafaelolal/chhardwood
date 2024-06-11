@@ -40,7 +40,9 @@ export default function RootLayout({
           <Script src="/bootstrap.bundle.min.js" strategy="beforeInteractive" />
         </body>
 
-        <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID_2!} />
+        <GoogleTagManager
+          gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}
+        />
         {/* <GoogleAnalytics gaId={process.env.GOOGLE_TAG_MANAGER_ID!} /> */}
       </html>
     </>
