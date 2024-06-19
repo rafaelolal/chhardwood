@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import CheckIcon from "./ui/check-icon";
-import InstagramIcon from "./ui/instagram-icon";
-import FacebookIcon from "./ui/facebook-icon";
-import PhoneIcon from "./ui/phone-icon";
 import { FACEBOOK, INSTAGRAM } from "./lib/constants";
+import CheckIcon from "./ui/check-icon";
+import FacebookIcon from "./ui/facebook-icon";
+import { HomeReviewIcon } from "./ui/home-review-icon";
+import InstagramIcon from "./ui/instagram-icon";
+import PhoneIcon from "./ui/phone-icon";
 
 export const metadata: Metadata = {
   title: "CH Floors",
@@ -141,12 +142,7 @@ export default function Home() {
             </h3>
 
             <div className="mx-auto mt-3">
-              <Link
-                href="https://g.page/r/Cbs6GDoU0NDIEB0/review"
-                className="btn btn-tertiary me-3"
-              >
-                Reviews
-              </Link>
+              <HomeReviewIcon />
 
               <Link
                 href="/contact"

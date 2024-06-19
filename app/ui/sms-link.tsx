@@ -1,3 +1,7 @@
+"use client";
+
+import { sendGTMEvent } from "@next/third-parties/google";
+
 export function SmsLink({
   number,
   children,
@@ -5,5 +9,10 @@ export function SmsLink({
   number: string;
   children: React.ReactNode;
 }) {
-  return <a href={`sms:${number}`}>{children}</a>;
+
+  return <a
+    onClick={() => {
+      sendGTMEvent({ event: "sms_link_clicked" });
+    }}
+    href={`sms:${number}`}>{children}</a>;
 }
