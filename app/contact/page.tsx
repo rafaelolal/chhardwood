@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { PageHeading } from "../ui/page-heading";
 import { EMAIL, PHONE_NUMBER } from "../lib/constants";
-import { PhoneLink } from "../ui/phone-link";
-import { EmailLink } from "../ui/email-link";
-import PhoneIcon from "../ui/phone-icon";
 import EmailIcon from "../ui/email-icon";
+import { EmailLink } from "../ui/email-link";
+import { PageHeading } from "../ui/page-heading";
+import PhoneIcon from "../ui/phone-icon";
+import { PhoneLink } from "../ui/phone-link";
+import { ReviewLink } from "../ui/review-link";
 import { SmsLink } from "../ui/sms-link";
-import ReviewIcon from "../ui/review-icon";
 
 export const metadata: Metadata = {
   title: "Contact Us | CH Floors",
@@ -82,13 +82,7 @@ export default function Contact() {
             </div>
           </EmailLink>
 
-          <Link href="https://g.page/r/Cbs6GDoU0NDIEB0/review">
-            <div className="contact-box">
-              <ReviewIcon className="fs-1 mx-3" />
-
-              <p>Reviews</p>
-            </div>
-          </Link>
+          <ReviewLink />
         </section>
 
         <section className="container my-5">
