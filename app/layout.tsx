@@ -36,14 +36,14 @@ export default function RootLayout({
 
           <Footer />
 
+          <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}`}
+            height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
           <Script src="/bootstrap.bundle.min.js" strategy="beforeInteractive" />
         </body>
 
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}
         />
-        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}`}
-          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         {/* <GoogleAnalytics gaId={process.env.GOOGLE_TAG_MANAGER_ID!} /> */}
       </html>
     </>
