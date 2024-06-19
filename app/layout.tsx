@@ -1,12 +1,11 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
-import "./ui/custom.scss";
-import { inter } from "./ui/fonts";
-import { krona_one } from "./ui/fonts";
-import Navbar from "./ui/navbar";
 import Script from "next/script";
+import "./ui/custom.scss";
+import { inter, krona_one } from "./ui/fonts";
 import Footer from "./ui/footer";
+import Navbar from "./ui/navbar";
 import QuickModal from "./ui/quick-modal";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "CH Floors",
@@ -43,6 +42,8 @@ export default function RootLayout({
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}
         />
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}`}
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         {/* <GoogleAnalytics gaId={process.env.GOOGLE_TAG_MANAGER_ID!} /> */}
       </html>
     </>
