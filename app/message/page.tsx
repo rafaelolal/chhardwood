@@ -1,6 +1,10 @@
 import { Metadata } from "next";
-import MessageForm from "../ui/message-form";
+import { PHONE_NUMBER } from "../lib/constants";
 import { PageHeading } from "../ui/page-heading";
+import PhoneIcon from "../ui/phone-icon";
+import { PhoneLink } from "../ui/phone-link";
+import { ReviewLink } from "../ui/review-link";
+import { SmsLink } from "../ui/sms-link";
 
 export const metadata: Metadata = {
   title: "Message Us | CH Floors",
@@ -16,7 +20,24 @@ export default function Message() {
       <PageHeading title="Get In Touch" subtitle="Let us know your thoughts" />
 
       <main>
-        <MessageForm />
+        {/* <MessageForm /> */}
+        <PhoneLink number={PHONE_NUMBER}>
+          <div className="contact-box">
+            <PhoneIcon className="fs-1 mx-3" />
+
+            <p>{PHONE_NUMBER}</p>
+          </div>
+        </PhoneLink>
+
+        <SmsLink number={PHONE_NUMBER}>
+          <div className="contact-box">
+            <i className="bi bi-chat-fill fs-1 mx-3" />
+
+            <p>{PHONE_NUMBER}</p>
+          </div>
+        </SmsLink>
+
+        <ReviewLink />
       </main>
     </>
   );

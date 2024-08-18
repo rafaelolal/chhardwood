@@ -2,6 +2,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./ui/custom.scss";
+import DelayedModal from "./ui/delayed-modal";
 import { inter, krona_one } from "./ui/fonts";
 import Footer from "./ui/footer";
 import Navbar from "./ui/navbar";
@@ -29,11 +30,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${inter.variable} ${krona_one.variable}`}>
           <Navbar />
-
           <QuickModal />
-
+          <DelayedModal />
           {children}
-
           <Footer />
 
           <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID_2!}`}

@@ -1,7 +1,11 @@
 import { Metadata } from "next";
-import ServiceList from "../ui/service-list";
-import { PageHeading } from "../ui/page-heading";
 import Link from "next/link";
+import { PHONE_NUMBER } from "../lib/constants";
+import { PageHeading } from "../ui/page-heading";
+import PhoneIcon from "../ui/phone-icon";
+import { PhoneLink } from "../ui/phone-link";
+import ServiceList from "../ui/service-list";
+import { SmsLink } from "../ui/sms-link";
 
 export const metadata: Metadata = {
   title: "Services | CH Floors",
@@ -77,6 +81,22 @@ export default function Services() {
           <div className="row gy-5 justify-content-center mt-3">
             <ServiceList services={services} />
           </div>
+
+          <PhoneLink number={PHONE_NUMBER}>
+            <div className="contact-box">
+              <PhoneIcon className="fs-1 mx-3" />
+
+              <p>{PHONE_NUMBER}</p>
+            </div>
+          </PhoneLink>
+
+          <SmsLink number={PHONE_NUMBER}>
+            <div className="contact-box">
+              <i className="bi bi-chat-fill fs-1 mx-3" />
+
+              <p>{PHONE_NUMBER}</p>
+            </div>
+          </SmsLink>
 
           <Link
             href="/gallery"
