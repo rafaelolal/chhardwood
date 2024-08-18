@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { EMAIL, PHONE_NUMBER } from "../lib/constants";
-import EmailIcon from "../ui/email-icon";
-import { EmailLink } from "../ui/email-link";
+import { PHONE_NUMBER } from "../lib/constants";
 import { PageHeading } from "../ui/page-heading";
 import PhoneIcon from "../ui/phone-icon";
 import { PhoneLink } from "../ui/phone-link";
@@ -73,14 +71,6 @@ export default function Contact() {
               <p>{PHONE_NUMBER}</p>
             </div>
           </SmsLink>
-
-          <EmailLink email={EMAIL}>
-            <div className="contact-box">
-              <EmailIcon className="fs-1 mx-3" />
-
-              <p>{EMAIL}</p>
-            </div>
-          </EmailLink>
 
           <ReviewLink />
         </section>
